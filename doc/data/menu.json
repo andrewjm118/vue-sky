@@ -1,0 +1,87 @@
+{
+    "documentation": [
+        {
+            "category": "综述",
+            "pages": [
+                "documentation/start",
+                "documentation/install",
+                "documentation/easy-start"
+            ]
+        },
+        {
+            "category": "布局",
+            "pages": [
+                "documentation/layout"
+            ]
+        },
+        {
+            "category": "组件",
+            "pages": [
+                "documentation/button",
+                "documentation/icon",
+                {
+                    "category": "表单",
+                    "pages": [
+                        "documentation/checkbox",
+                        "documentation/field",
+                        "documentation/input",        
+                        "documentation/radio",
+                        "documentation/select",
+                        "documentation/switch"
+                    ]
+                },
+                {
+                    "category" : "数据展示",
+                    "pages" : [
+
+                        "documentation/table",
+                        "documentation/tabs",
+                        "documentation/tag",
+                        "documentation/tooltip"
+                    ]
+                },
+                {
+                    "category" : "反馈",
+                    "pages": [
+                        "documentation/alert", 
+                        "documentation/notification",
+                        "documentation/loading"
+                    ] 
+                },
+                {
+                    "category" : "导航",
+                    "pages": [
+                         
+                        "documentation/dropdown"
+                    ] 
+                },
+                {
+                    "category" : "其他",
+                    "pages": [
+                        
+                    ] 
+                }
+            ]
+        }
+    ],
+    "extensions": [
+        {
+            "category": "Input format",
+            "pages": [
+                "extensions/cleavejs"
+            ]
+        },
+        {
+            "category": "Validation",
+            "pages": [
+                "extensions/veevalidate"
+            ]
+        },
+        {
+            "category": "Drag & drop",
+            "pages": [
+                "extensions/sortablejs"
+            ]
+        }
+    ]
+}

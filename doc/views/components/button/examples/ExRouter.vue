@@ -1,0 +1,20 @@
+<template>
+  <section>
+    <div class="buttons">
+      <s-button
+        tag="router-link"
+        to="/documentation"
+        type="is-link"
+      >
+        Docs
+      </s-button>
+      <s-button
+        tag="router-link"
+        to="/expo"
+        type="is-info"
+      >
+        Expo
+      </s-button>
+    </div>
+  </section>
+</template>
