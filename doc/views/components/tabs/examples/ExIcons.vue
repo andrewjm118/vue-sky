@@ -1,0 +1,16 @@
+<template>
+  <s-tabs>
+    <s-tab-item
+      label="Pictures"
+      icon="google-photos"
+    />
+    <s-tab-item
+      label="Music"
+      icon="library-music"
+    />
+    <s-tab-item
+      label="Videos"
+      icon="video"
+    />
+  </s-tabs>
+</template>

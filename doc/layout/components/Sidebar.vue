@@ -48,24 +48,6 @@ export default {
   props: {
     data: Array
   },
-  mounted () {
-    // 菜单名称
-    //       综述
-
-    // 组件
-
-    // 基础
-
-    // 表单
-
-    // 数据
-
-    // 反馈
-
-    // 导航
-
-    // 其他
-  },
   methods: {
     normalizedData (items) {
       return items.map((item) => {

@@ -1,0 +1,57 @@
+<template>
+  <section>
+    <s-tabs
+      size="is-small"
+      class="block"
+    >
+      <s-tab-item
+        label="Pictures"
+        icon="google-photos"
+      />
+      <s-tab-item
+        label="Music"
+        icon="library-music"
+      />
+      <s-tab-item
+        label="Videos"
+        icon="video"
+      />
+    </s-tabs>
+
+    <s-tabs
+      size="is-medium"
+      class="block"
+    >
+      <s-tab-item
+        label="Pictures"
+        icon="google-photos"
+      />
+      <s-tab-item
+        label="Music"
+        icon="library-music"
+      />
+      <s-tab-item
+        label="Videos"
+        icon="video"
+      />
+    </s-tabs>
+
+    <s-tabs
+      size="is-large"
+      class="block"
+    >
+      <s-tab-item
+        label="Pictures"
+        icon="google-photos"
+      />
+      <s-tab-item
+        label="Music"
+        icon="library-music"
+      />
+      <s-tab-item
+        label="Videos"
+        icon="video"
+      />
+    </s-tabs>
+  </section>
+</template>

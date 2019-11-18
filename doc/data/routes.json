@@ -18,7 +18,7 @@
     },
     "documentation/start": {
         "title": "介绍",
-        "subtitle": "<strong>Three ways</strong> to install and use Buefy",
+        "subtitle": "vue-sky 是一款基于 Bulma、Vue.js 2.0 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品",
         "path": "/documentation/start",
         "githubPath": "pages/installation/Start.vue",
         "menu": "documentation",
@@ -30,9 +30,9 @@
     },
     "documentation/install": {
         "title": "安装",
-        "subtitle": "<strong>Three ways</strong> to install and use Buefy",
+        "subtitle": "两种安装方式",
         "path": "/documentation/install",
-        "githubPath": "pages/installation/Start.vue",
+        "githubPath": "pages/installation/Install.vue",
         "menu": "documentation",
         "breadcrumb": [
             "/",
@@ -274,7 +274,7 @@
     },
     "documentation/field": {
         "title": "Field 域",
-        "subtitle": "Fields are used to add functionality to controls and to attach/group components and elements together",
+        "subtitle": "用于向控件添加功能，并将组件和元素附加在一起",
         "path": "/documentation/field",
         "githubPath": "pages/components/field/Field.vue",
         "menu": "documentation",
@@ -322,7 +322,7 @@
     },
     "documentation/checkbox": {
         "title": "Checkbox 多选框",
-        "subtitle": "Select a single or grouped options",
+        "subtitle": "选择单个或多个选项",
         "path": "/documentation/checkbox",
         "githubPath": "pages/components/checkbox/Checkbox.vue",
         "menu": "documentation",
@@ -420,7 +420,7 @@
     },
     "documentation/table": {
         "title": "Table 表格",
-        "subtitle": "Tabulated data are sometimes needed, it's even better when it's <strong>responsive</strong>",
+        "subtitle": "用于展示多条结构类似的数据，可对数据进行排序、筛选、对比或其他自定义操作。",
         "path": "/documentation/table",
         "githubPath": "pages/components/table/Table.vue",
         "menu": "documentation",

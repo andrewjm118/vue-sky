@@ -16,7 +16,6 @@
         <div class="docs-main">
           <div class="docs-main-container">
             <Header v-bind="meta" />
-
             <router-view />
           </div>
         </div>
@@ -52,6 +51,7 @@ export default {
   },
   methods: {
     setMeta (meta) {
+      console.log(99, meta)
       this.meta = meta
       this.menu = menuData[this.meta.menu]
     },

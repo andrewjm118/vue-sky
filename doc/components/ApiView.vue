@@ -3,66 +3,97 @@
     id="api-view"
     class="api-view"
   >
-    <h2 class="title is-4">
+    <!--  <h2 class="title is-4">
       <router-link to="#api-view">
         #
       </router-link>
       API
-    </h2>
+    </h2> -->
 
     <template v-for="component in data">
       <div :key="component.title">
-        <h3
-          v-if="component.title"
-          class="subtitle"
-        >
-          {{ component.title }}
-        </h3>
-        <s-tabs>
-          <s-tab-item
-            v-if="component.props"
-            label="属性"
+        <div v-if="component.props">
+          <p
+            :id="`props`"
+            class="title is-4"
           >
-            <s-table
-              :mobile-cards="false"
-              :data="component.props"
-              :columns="propsColumns"
-            />
-          </s-tab-item>
+            <router-link
+              v-if="component.props"
+              :to="`#props`"
+            >
+              #
+            </router-link>
+            {{ component.title }} 属性
+          </p>
 
-          <s-tab-item
-            v-if="component.slots"
-            label="Slots"
-          >
-            <s-table
-              :mobile-cards="false"
-              :data="component.slots"
-              :columns="slotsColumns"
-            />
-          </s-tab-item>
+          <s-table
+            :mobile-cards="false"
+            :data="component.props"
+            :columns="propsColumns"
+          />
+          <hr class="is-medium">
+        </div>
 
-          <s-tab-item
-            v-if="component.events"
-            label="事件"
+        <div v-if="component.slots">
+          <p
+            :id="`slots`"
+            class="title is-4"
           >
-            <s-table
-              :mobile-cards="false"
-              :data="component.events"
-              :columns="eventsColumns"
-            />
-          </s-tab-item>
+            <router-link
+              v-if="component.slots"
+              :to="`#slots`"
+            >
+              #
+            </router-link>
+            {{ component.title }} Slot
+          </p>
+          <s-table
+            :mobile-cards="false"
+            :data="component.slots"
+            :columns="slotsColumns"
+          />
+        </div>
 
-          <s-tab-item
-            v-if="component.methods"
-            label="方法"
+        <div v-if="component.events">
+          <p
+            :id="`events`"
+            class="title is-4"
           >
-            <s-table
-              :mobile-cards="false"
-              :data="component.methods"
-              :columns="methodsColumns"
-            />
-          </s-tab-item>
-        </s-tabs>
+            <router-link
+              v-if="component.events"
+              :to="`#events`"
+            >
+              #
+            </router-link>
+            {{ component.title }} 事件
+          </p>
+          <s-table
+            :mobile-cards="false"
+            :data="component.events"
+            :columns="eventsColumns"
+          />
+          <hr class="is-medium">
+        </div>
+
+        <div v-if="component.methods">
+          <p
+            :id="`methods`"
+            class="title is-4"
+          >
+            <router-link
+              v-if="component.methods"
+              :to="`#methods`"
+            >
+              #
+            </router-link>
+            {{ component.title }} 方法
+          </p>
+          <s-table
+            :mobile-cards="false"
+            :data="component.methods"
+            :columns="methodsColumns"
+          />
+        </div>
       </div>
     </template>
   </section>
@@ -98,6 +129,17 @@ export default {
         { label: 'Parameters', field: 'parameters', renderHtml: true },
         { label: 'Return', field: 'return', renderHtml: true }
       ]
+    }
+  },
+  computed: {
+    slugifiedTitle () {
+      if (!this.title) return ''
+      return this.title.toLowerCase()
+        .replace(/\s+/g, '-') // Replace spaces with -
+        .replace(/[^\w-]+/g, '') // Remove all non-word chars
+        .replace(/--+/g, '-') // Replace multiple - with single -
+        .replace(/^-+/, '') // Trim - from start of text
+        .replace(/-+$/, '') // Trim - from end of text
     }
   }
 }

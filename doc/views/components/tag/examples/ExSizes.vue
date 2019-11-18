@@ -1,0 +1,19 @@
+<template>
+  <section>
+    <s-tag type="is-dark">
+      Default
+    </s-tag>
+    <s-tag
+      type="is-primary"
+      size="is-medium"
+    >
+      Medium
+    </s-tag>
+    <s-tag
+      type="is-info"
+      size="is-large"
+    >
+      Large
+    </s-tag>
+  </section>
+</template>

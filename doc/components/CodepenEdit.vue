@@ -35,10 +35,10 @@ export default {
       hasHtml: false,
       externalScripts: [
         'https://unpkg.com/vue/dist/vue.min.js',
-        'https://unpkg.com/buefy/dist/buefy.min.js'
+        'https://unpkg.com/vue-sky/dist/vue-sky.min.js'
       ],
       externalStyles: [
-        'https://unpkg.com/buefy/dist/buefy.min.css',
+        'https://unpkg.com/vue-sky/dist/vue-sky.min.css',
         'https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css'
       ]
     }
@@ -46,8 +46,8 @@ export default {
   computed: {
     data () {
       return JSON.stringify({
-        title: `${this.$route.meta.title} ${this.title ? this.title.toLowerCase() : ''} - Buefy example`,
-        tags: ['buefy', 'vue', 'bulma'],
+        title: `${this.$route.meta.title} ${this.title ? this.title.toLowerCase() : ''} - Vue-sky example`,
+        tags: ['vue-sky', 'vue', 'bulma'],
         editors: this.style ? 111 : 101,
         layout: 'right',
         html: this.getHtml(),
@@ -74,7 +74,7 @@ export default {
       if (start < 0 || end < 0) return
 
       let html = this.code.substring(start + 10, end)
-      html = html.replace(/src="\/static/g, 'src="https://buefy.org/static')
+      html = html.replace(/src="\/static/g, 'src="https://vue-sky.org/static')
 
       // FontAwesome
       if (

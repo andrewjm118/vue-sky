@@ -4,6 +4,7 @@ import Button from './components/button'
 import Checkbox from './components/checkbox'
 import Radio from './components/radio'
 import Switch from './components/switch'
+import Message from './components/message'
 import Tag from './components/tag'
 import TagList from './components/tag-list'
 import Input from './components/input'
@@ -24,6 +25,7 @@ const components = {
   Checkbox,
   Radio,
   Switch,
+  Message,
   Tag,
   TagList,
   Input,

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
+import { afterEachGlobal } from './guards'
 import routes from '../data/routes'
 
 Vue.use(Router)
@@ -29,7 +29,22 @@ const router = new Router({
       children: [
         route('documentation', 'Documentation'),
         route('documentation/start', 'installation/Start'),
-        route('documentation/button', 'components/button/Button')
+        route('documentation/install', 'installation/Install'),
+        route('documentation/button', 'components/button/Button'),
+        route('documentation/table', 'components/table/Table'),
+        route('documentation/checkbox', 'components/checkbox/Checkbox'),
+        route('documentation/field', 'components/field/Field'),
+        route('documentation/input', 'components/input/Input'),
+        route('documentation/radio', 'components/radio/Radio'),
+        route('documentation/select', 'components/select/Select'),
+        route('documentation/switch', 'components/switch/Switch'),
+        route('documentation/tabs', 'components/tabs/Tabs'),
+        route('documentation/tag', 'components/tag/Tag'),
+        route('documentation/tooltip', 'components/tooltip/Tooltip'),
+        route('documentation/notification', 'components/notification/Notification'),
+        route('documentation/loading', 'components/loading/Loading'),
+        route('documentation/dropdown', 'components/dropdown/Dropdown')
+
       ]
     },
     { path: '*', redirect: '' }
@@ -42,5 +57,7 @@ const router = new Router({
     }
   }
 })
+
+router.afterEach(afterEachGlobal)
 
 export default router

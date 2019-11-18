@@ -22,6 +22,7 @@ module.exports = {
     'vue/require-default-prop' : 'off',
     'generator-star-spacing': 'off',
     'no-prototype-builtins' : 'off',
+    'no-useless-escape' : 'off',
     'vue/no-reserved-keys' : 'off',
     'import/no-webpack-loader-syntax' : 'off',
     'vue/no-v-html' : 'off',
