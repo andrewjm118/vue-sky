@@ -14,6 +14,7 @@
       'is-hovered': hovered,
       'is-selected': selected
     }]"
+    @click="$emit('click', $event)"
   >
     <s-icon
       v-if="iconLeft"
