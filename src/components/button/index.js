@@ -1,19 +1,13 @@
 import Button from './src/button'
 import { use, registerComponent } from '../../utils/plugins'
 
-const Plugins = {
+const Plugin = {
   install (Vue) {
     registerComponent(Vue, Button)
   }
 }
 
-use(Plugins)
-/* Button.install = function (Vue) {
-  Vue.component(Button.name, Button)
-}
-
-export default Button
- */
+use(Plugin)
 
 export default Plugin
 

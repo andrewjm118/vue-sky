@@ -113,33 +113,34 @@ export default {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-sky/dist/vue-sky.min.css">
 </head>
 
 <body>
     <div id="app">
-        <!-- Buefy components goes here -->
+      <s-button @click="showMessage">Show message</s-button>
     </div>
 
-    <script src="https://unpkg.com/vue"></\script>
-    <!-- Full bundle -->
-    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></\script>
 
-    <!-- Individual components -->
-    <script src="https://unpkg.com/buefy/dist/components/table"></\script>
-    <script src="https://unpkg.com/buefy/dist/components/input"></\script>
+    <script src="https://unpkg.com/vue"></\script>
+    <script type="text/javascript" src="https://unpkg.com/vue-sky/dist/components/button"></\script>
 
     <script>
-        new Vue({
-            el: '#app'
-        })
+    new Vue({
+        el: '#app',
+      methods: {
+        showMessage: function () {
+          alert('Thanks for using Vue-sky')
+        }
+      }
+    })
     </\script>
 </body>
 </html>
       `,
       importingScript: `
       <!-- 引入Vue -->
-<script src="//cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></\script>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></\script>
 <!-- 引入样式 -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/vue-sky/dist/vue-sky.min.css">
 <!-- 引入组件库 -->
