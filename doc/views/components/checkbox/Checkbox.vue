@@ -3,10 +3,23 @@
     <Example
       :component="ExSimple"
       :code="ExSimpleCode"
-      vertical
+      title="基础案例"
     />
 
+    <!--  <Example
+      :component="ExControll"
+      :code="ExControllCode"
+      title="ceshi"
+      vertical
+    />
+ -->
     <Example
+      :component="ExCheckboxGroup"
+      :code="ExCheckboxGroupCode"
+      title="ceshi111"
+      vertical
+    />
+    <!-- <Example
       :component="ExArray"
       :code="ExArrayCode"
       title="Grouped (Array)"
@@ -39,7 +52,7 @@
           Field
         </router-link>.
       </p>
-    </Example>
+    </Example> -->
 
     <ApiView :data="api" />
   </div>
@@ -51,7 +64,12 @@ import api from './api/checkbox'
 import ExSimple from './examples/ExSimple'
 import ExSimpleCode from '!!raw-loader!./examples/ExSimple'
 
-import ExArray from './examples/ExArray'
+/* import ExControll from './examples/ExControll'
+import ExControllCode from '!!raw-loader!./examples/ExControll' */
+
+import ExCheckboxGroup from './examples/ExCheckboxGroup'
+import ExCheckboxGroupCode from '!!raw-loader!./examples/ExCheckboxGroup'
+/* import ExArray from './examples/ExArray'
 import ExArrayCode from '!!raw-loader!./examples/ExArray'
 
 import ExSizes from './examples/ExSizes'
@@ -61,7 +79,7 @@ import ExTypes from './examples/ExTypes'
 import ExTypesCode from '!!raw-loader!./examples/ExTypes'
 
 import ExCheckboxButton from './examples/ExCheckboxButton'
-import ExCheckboxButtonCode from '!!raw-loader!./examples/ExCheckboxButton'
+import ExCheckboxButtonCode from '!!raw-loader!./examples/ExCheckboxButton' */
 
 export default {
   data () {
@@ -69,14 +87,18 @@ export default {
       api,
       ExSimple,
       ExSimpleCode,
-      ExArray,
+      /* ExControll,
+      ExControllCode, */
+      ExCheckboxGroup,
+      ExCheckboxGroupCode
+      /* ExArray,
       ExArrayCode,
       ExSizes,
       ExSizesCode,
       ExTypes,
       ExTypesCode,
       ExCheckboxButton,
-      ExCheckboxButtonCode
+      ExCheckboxButtonCode */
     }
   }
 }

@@ -5,8 +5,9 @@
 
       <s-button
         tag="a"
-        href="https://buefy.org"
+        href="#"
         target="_blank"
+        type="is-link"
       >
         Anchor
       </s-button>
@@ -16,6 +17,14 @@
         native-type="submit"
         value="Submit input"
       />
+
+      <s-button
+        tag="router-link"
+        to="/"
+        type="is-link"
+      >
+        Router
+      </s-button>
     </div>
   </section>
 </template>

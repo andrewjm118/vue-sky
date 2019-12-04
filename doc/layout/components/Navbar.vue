@@ -8,20 +8,20 @@
         <router-link
           to="/"
           class="navbar-item"
-          title="Buefy: lightweight UI components for Vue.js based on Bulma"
+          title="vue-sky: lightweight UI components for Vue.js based on Bulma"
           active-class=""
         >
           <img
             v-if="light"
             src="@/assets/images/logo.png"
-            alt="Buefy"
+            alt="vue-sky"
           >
           <img
             v-else
             src="@/assets/images/logo.png"
-            alt="Buefy"
+            alt="vue-sky"
           >
-          <span style="margin-left: 10px;color: #4A4A4A;font-weight: bold;font-size: 16px;">sky-ui</span>
+          <span style="margin-left: 10px;color: #4A4A4A;font-weight: bold;font-size: 16px;">vue-sky</span>
         </router-link>
 
         <span

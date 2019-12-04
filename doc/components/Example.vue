@@ -2,7 +2,7 @@
   <section class="example-section">
     <p
       :id="`${slugifiedTitle}`"
-      class="title is-4"
+      class="title is-spaced is-4"
     >
       <router-link
         v-if="title"
@@ -11,6 +11,9 @@
         #
       </router-link>
       {{ title }}
+    </p>
+    <p class="subtitle">
+      {{ desc }}
     </p>
     <div class="content">
       <slot />
@@ -54,6 +57,7 @@ export default {
     component: [Object, Function],
     code: String,
     title: String,
+    desc: String,
     paddingless: Boolean,
     vertical: Boolean
   },

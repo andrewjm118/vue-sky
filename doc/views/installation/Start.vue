@@ -10,7 +10,7 @@
           基于 Vue 开发的 UI 组件
         </li>
         <li>
-          使用 npm + webpack + babel 的工作流，支持 ES2015
+          使用 npm + webpack4.0 + babel 的工作流，支持 ES2015
         </li>
         <li>
           样式基于Bulma框架(Flexbox based)，布局简单、响应式、可定制化

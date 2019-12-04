@@ -2,7 +2,9 @@ import Alert from './components/alert'
 import Icon from './components/icon'
 import Button from './components/button'
 import Checkbox from './components/checkbox'
+import CheckboxGroup from './components/checkbox-group'
 import Radio from './components/radio'
+import RadioButton from './components/radio-button'
 import Switch from './components/switch'
 import Message from './components/message'
 import Tag from './components/tag'
@@ -23,7 +25,9 @@ const components = {
   Icon,
   Button,
   Checkbox,
+  CheckboxGroup,
   Radio,
+  RadioButton,
   Switch,
   Message,
   Tag,

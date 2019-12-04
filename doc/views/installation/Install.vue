@@ -113,26 +113,21 @@ export default {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/vue-sky/dist/vue-sky.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/vue-sky/dist/vue-sky.min.css">
 </head>
 
 <body>
     <div id="app">
-      <s-button @click="showMessage">Show message</s-button>
+      <s-button type="is-primary">Show message</s-button>
     </div>
 
 
-    <script src="https://unpkg.com/vue"></\script>
-    <script type="text/javascript" src="https://unpkg.com/vue-sky/dist/components/button"></\script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></\script>
+    <script src="//cdn.jsdelivr.net/npm/vue-sky/dist/vue-sky.min.js"></\script>
 
     <script>
     new Vue({
-        el: '#app',
-      methods: {
-        showMessage: function () {
-          alert('Thanks for using Vue-sky')
-        }
-      }
+      el: '#app',
     })
     </\script>
 </body>
@@ -140,7 +135,7 @@ export default {
       `,
       importingScript: `
       <!-- 引入Vue -->
-<script src="https://unpkg.com/vue/dist/vue.min.js"></\script>
+<script src="//cdn.jsdelivr.net/npm/vue"></\script>
 <!-- 引入样式 -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/vue-sky/dist/vue-sky.min.css">
 <!-- 引入组件库 -->

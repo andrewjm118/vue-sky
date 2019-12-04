@@ -30,6 +30,7 @@ const router = new Router({
         route('documentation', 'Documentation'),
         route('documentation/start', 'installation/Start'),
         route('documentation/install', 'installation/Install'),
+        route('documentation/layout', 'Layout'),
         route('documentation/button', 'components/button/Button'),
         route('documentation/table', 'components/table/Table'),
         route('documentation/checkbox', 'components/checkbox/Checkbox'),
@@ -43,7 +44,9 @@ const router = new Router({
         route('documentation/tooltip', 'components/tooltip/Tooltip'),
         route('documentation/notification', 'components/notification/Notification'),
         route('documentation/loading', 'components/loading/Loading'),
-        route('documentation/dropdown', 'components/dropdown/Dropdown')
+        route('documentation/dropdown', 'components/dropdown/Dropdown'),
+        route('documentation/icon', 'installation/Icon'),
+        route('documentation/custom', 'installation/Custom')
 
       ]
     },

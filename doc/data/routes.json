@@ -7,7 +7,7 @@
     },
     "documentation": {
         "title": "文档",
-        "subtitle": "Learn everything you need to start using Buefy",
+        "subtitle": "开始学习使用vue-sky",
         "path": "/documentation",
         "githubPath": "pages/Documentation.vue",
         "menu": "documentation",
@@ -65,16 +65,16 @@
             "documentation/alert"
         ]
     },
-    "documentation/customization": {
-        "title": "Customization",
-        "subtitle": "If you're familiar with <a href='http://sass-lang.com' target='_blank'>Sass</a> and want to <strong>customize</strong> Buefy with your own theme, follow these steps",
-        "path": "/documentation/customization",
-        "githubPath": "pages/installation/Customization.vue",
+    "documentation/custom": {
+        "title": "自定义配置",
+        "subtitle": "配置默认组件功能，自定义个性化定制",
+        "path": "/documentation/custom",
+        "githubPath": "pages/installation/Custom.vue",
         "menu": "documentation",
         "breadcrumb": [
             "/",
             "documentation",
-            "documentation/customization"
+            "documentation/custom"
         ]
     },
     "documentation/constructor-options": {
@@ -91,7 +91,7 @@
     },
     "documentation/layout": {
         "title": "Layout & elements",
-        "subtitle": "Buefy has the entire Bulma's core <b>built in</b>. You can use any feature from Bulma, plus all the components Buefy offers",
+        "subtitle": "Bulma的布局",
         "path": "/documentation/layout",
         "githubPath": "pages/Layout.vue",
         "menu": "documentation",
@@ -142,7 +142,7 @@
         "title": "Icon 图标",
         "subtitle": "Icons take an important role of any application",
         "path": "/documentation/icon",
-        "githubPath": "pages/components/icon/Icon.vue",
+        "githubPath": "views/installaction/Icon.vue",
         "menu": "documentation",
         "breadcrumb": [
             "/",

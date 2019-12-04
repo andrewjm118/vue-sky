@@ -6,7 +6,7 @@
     :type="nativeType"
     :class="[size, type, {
       'is-rounded' : rounded,
-      'is-loading' : loading,
+      'is-btn-loading' : loading,
       'is-outlined' : outlined,
       'is-inverted' : inverted,
       'is-focused' : focused,
@@ -17,7 +17,7 @@
     @click="$emit('click', $event)"
   >
     <s-icon
-      v-if="iconLeft"
+      v-if="iconLeft && !loading"
       :pack="iconPack"
       :icon="iconLeft"
       :size="iconSize"
@@ -97,3 +97,21 @@ export default {
   methods: {}
 }
 </script>
+<style lang="scss">
+ .is-btn-loading {
+   pointer-events: none;
+   &:before {
+            animation: spinAround 500ms infinite linear;
+            border: 2px solid #dbdbdb;
+            border-radius: 290486px;
+            border-right-color: transparent;
+            border-top-color: transparent;
+            content: "";
+            display: block;
+            height: 1em;
+            position: relative;
+            margin-right:0.3em;
+            width: 1em;
+        }
+ }
+</style>

@@ -4,7 +4,8 @@ Checkbox.install = function (Vue) {
   Vue.component(Checkbox.name, Checkbox)
 }
 
-const Plugin = {
+export default Checkbox
+/* const Plugin = {
   install (Vue) {
     Vue.component(Checkbox.name, Checkbox)
   }
@@ -18,4 +19,4 @@ export default Plugin
 
 export {
   Checkbox
-}
+} */

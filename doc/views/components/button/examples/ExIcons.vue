@@ -2,28 +2,30 @@
   <section>
     <div class="buttons">
       <s-button
-        size="is-small"
-        icon-left="github-circle"
-      >
-        Add
-      </s-button>
+        type="is-primary"
 
-      <s-button icon-left="github-circle">
-        Add
+        icon-left="magnify"
+      />
+
+      <s-button icon-left="magnify">
+        Search
+      </s-button>
+      <s-button
+        rounded
+        icon-left="magnify"
+      />
+      <s-button
+        type="is-primary"
+        icon-left="magnify"
+      >
+        Search
       </s-button>
 
       <s-button
-        size="is-medium"
-        icon-left="github-circle"
+        type="is-primary"
+        icon-right="magnify"
       >
-        Add
-      </s-button>
-
-      <s-button
-        size="is-large"
-        icon-left="github-circle"
-      >
-        Add
+        Search
       </s-button>
     </div>
 
@@ -37,14 +39,14 @@
 
       <s-button
         type="is-danger"
-        icon-right="delete"
+        icon-right="delete-empty"
       >
         Delete
       </s-button>
 
       <s-button
         type="is-danger"
-        icon-right="delete"
+        icon-right="trash-can"
       />
     </div>
   </section>

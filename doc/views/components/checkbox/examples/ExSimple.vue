@@ -1,14 +1,10 @@
 <template>
   <section>
-    <div class="field">
+    <div class="block">
       <s-checkbox>Basic</s-checkbox>
-    </div>
-    <div class="field">
       <s-checkbox v-model="checkbox">
         {{ checkbox }}
       </s-checkbox>
-    </div>
-    <div class="field">
       <s-checkbox
         v-model="checkboxCustom"
         true-value="Yes"
@@ -16,16 +12,11 @@
       >
         {{ checkboxCustom }}
       </s-checkbox>
-    </div>
-    <div class="field">
-      <s-checkbox :indeterminate="true">
-        Indeterminate111
-      </s-checkbox>
-    </div>
-    <div class="field">
-      <s-checkbox disabled>
-        Disabled
-      </s-checkbox>
+      <s-checkbox disabled />
+      <s-checkbox
+        v-model="checked"
+        disabled
+      />
     </div>
   </section>
 </template>
@@ -35,6 +26,7 @@ export default {
   data () {
     return {
       checkbox: false,
+      checked: true,
       checkboxCustom: 'Yes'
     }
   }

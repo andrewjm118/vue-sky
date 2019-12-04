@@ -3,79 +3,79 @@ export default [
     props: [
       {
         name: '<code>type</code>',
-        description: 'Type (color) of the control, optional',
+        description: '控件的类型(颜色)，可选',
         type: 'String',
         values: `<code>is-white</code>, <code>is-black</code>, <code>is-light</code>,
                     <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>,
                     <code>is-warning</code>, <code>is-danger</code>,
-                    and any other colors you've set in the <code>$colors</code> list on Sass`,
+                     以及你在Scss的$colors列表中设置的任何其他颜色`,
         default: '—'
       },
       {
         name: '<code>size</code>',
-        description: 'Vertical size of button, optional',
+        description: '按钮的大小尺寸，可选',
         type: 'String',
         values: '<code>is-small</code>, <code>is-medium</code>, <code>is-large</code>',
         default: '—'
       },
       {
         name: '<code>loading</code>',
-        description: 'Add the loading state to the button',
+        description: '按钮添加加载状态',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>rounded</code>',
-        description: 'Rounded style',
+        description: '圆形的风格',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>outlined</code>',
-        description: 'Outlined style',
+        description: '轮廓边框风格',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>icon-left</code>',
-        description: 'Icon name to show on the left',
+        description: '图标放在左边',
         type: 'String',
         values: '—',
         default: '—'
       },
       {
         name: '<code>icon-right</code>',
-        description: 'Icon name to show on the right',
+        description: '图标放在右边',
         type: 'String',
         values: '—',
         default: '—'
       },
       {
         name: '<code>icon-pack</code>',
-        description: 'Icon pack to use',
+        description: '图标库来自哪里',
         type: 'String',
         values: '<code>mdi</code>, <code>fa</code>, <code>fas</code>, <code>far</code>, <code>fad</code>, <code>fal</code>',
         default: '<code>mdi</code>'
       },
       {
         name: '<code>native-type</code>',
-        description: 'Button type, like native',
+        description: '按钮的原生类型',
         type: 'String',
         values: 'Any native button type',
         default: '<code>button</code>'
       },
       {
         name: '<code>tag</code>',
-        description: 'Button tag name',
+        description: '按钮类型',
         type: 'String',
-        values: '<code>button</code>, <code>a</code>, <code>input</code>, <code>router-link</code>, <code>nuxt-link</code> or other nuxt alias',
+        values: '<code>button</code>, <code>a</code>, <code>input</code>, <code>router-link</code>',
         default: '<code>button</code>'
       },
       {
-        name: 'Any native attribute',
+        name: '其他原生属性',
         description: '—',
         type: '—',
         values: '—',
@@ -85,7 +85,7 @@ export default [
     events: [
       {
         name: '<code>click</code>',
-        description: 'Triggers on click',
+        description: '点击事件',
         parameters: '<code>event: $event</code>'
       }
     ]

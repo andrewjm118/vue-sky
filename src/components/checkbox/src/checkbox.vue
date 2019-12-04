@@ -4,34 +4,48 @@
     class="s-checkbox checkbox"
     :class="[size, {'is-disabled': disabled}]"
     :disabled="disabled"
-    @click="focus"
-    @keydown.prevent.enter="$refs.label.click()"
   >
     <input
-      ref="input"
+      v-if="group"
       v-model="computedValue"
       :indeterminate.prop="indeterminate"
       type="checkbox"
-      :disabled="disabled"
-      :required="required"
-      :name="name"
       :value="nativeValue"
+      :disabled="disabled"
       :true-value="trueValue"
       :false-value="falseValue"
-      @click.stop
+      @change="handleChange"
+      @focus="handleFocus"
+      @blur="handleBlur"
     >
+    <input
+      v-else
+      type="checkbox"
+      :checked="value"
+      :disabled="disabled"
+      :true-value="trueValue"
+      :false-value="falseValue"
+      @change="handleChange"
+      @focus="handleFocus"
+      @blur="handleBlur"
+    >
+
     <span
       class="check"
       :class="type"
     />
     <span class="control-label"><slot /></span>
+
   </label>
 </template>
 
 <script>
 export default {
   name: 'SCheckbox',
-  components: {},
+  model: {
+    prop: 'value',
+    event: 'change'
+  },
   props: {
     value: [String, Number, Boolean, Function, Object, Array],
     nativeValue: [String, Number, Boolean, Function, Object, Array],
@@ -50,30 +64,34 @@ export default {
       default: false
     }
   },
-  data () {
-    return {
-      newValue: this.value
-    }
-  },
   computed: {
     computedValue: {
+      // Never use this while this.group === undefined
       get () {
-        return this.newValue
+        return this.group.value
       },
       set (value) {
-        this.newValue = value
-        this.$emit('input', value)
+        // this.group.$emit.apply(this.group, ['change', value])
+        this.group.$emit('change', value)
       }
-    }
-  },
-  watch: {
-    value (value) {
-      this.newValue = value
+    },
+    group () {
+      let parent = this.$parent
+      while (parent && parent.$options.name !== 'SCheckboxGroup') {
+        parent = parent.$parent
+      }
+      return parent
     }
   },
   methods: {
-    focus () {
-      this.$refs.input.focus()
+    handleChange (event) {
+      this.$emit('change', event.target.checked)
+    },
+    handleFocus (event) {
+      this.$emit('focus', event)
+    },
+    handleBlur (event) {
+      this.$emit('blur', event)
     }
   }
 }
