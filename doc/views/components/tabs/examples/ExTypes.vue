@@ -2,45 +2,45 @@
   <section>
     <s-tabs type="is-boxed">
       <s-tab-item
-        label="Pictures"
+        label="图片"
         icon="google-photos"
       />
       <s-tab-item
-        label="Music"
+        label="音乐"
         icon="library-music"
       />
       <s-tab-item
-        label="Videos"
+        label="视频"
         icon="video"
       />
     </s-tabs>
 
     <s-tabs type="is-toggle">
       <s-tab-item
-        label="Pictures"
+        label="图片"
         icon="google-photos"
       />
       <s-tab-item
-        label="Music"
+        label="音乐"
         icon="library-music"
       />
       <s-tab-item
-        label="Videos"
+        label="视频"
         icon="video"
       />
     </s-tabs>
 
     <s-tabs type="is-toggle-rounded">
       <s-tab-item
-        label="Pictures"
+        label="图片"
         icon="google-photos"
       />
       <s-tab-item
-        label="Music"
+        label="音乐"
         icon="library-music"
       />
       <s-tab-item
-        label="Videos"
+        label="视频"
         icon="video"
       />
     </s-tabs>

@@ -8,49 +8,40 @@
     <Example
       :component="ExPosition"
       :code="ExPositionCode"
-      title="Position"
+      title="位置"
     />
 
     <Example
       :component="ExIcons"
       :code="ExIconsCode"
-      title="Icons"
+      title="图标"
     />
 
     <Example
       :component="ExSizes"
       :code="ExSizesCode"
-      title="Sizes"
+      title="大小"
     />
 
     <Example
       :component="ExTypes"
       :code="ExTypesCode"
-      title="Types"
-    >
-      <p>If you want a more classic style with borders add the <code>is-boxed</code> type.</p>
-      <p>Or like Radio Buttons with the <code>is-toggle</code> or <code>is-toggle-rounded</code> type.</p>
-    </Example>
+      title="类型"
+      desc="如果你想要一个更经典的带有边框的样式，可以添加is-boxed类型。或者是具有is-toggle或is-toggle-round类型的单选按钮。"
+    />
 
     <Example
       :component="ExExpanded"
       :code="ExExpandedCode"
-      title="Expanded"
-    >
-      <p class="content">
-        If you want the tabs to take full width, add the <code>expanded</code> prop.
-      </p>
-    </Example>
+      title="自适应宽度"
+    />
 
     <Example
       :component="ExCustomHeaders"
       :code="ExCustomHeadersCode"
-      title="Custom Headers"
-    >
-      <p>
-        By adding a slot named <code>header</code> you can customize the header of a tab item.
-      </p>
-    </Example>
+      title="自定义表头"
+      desc="通过添加一个名为header的槽，您可以自定义选项卡项的header。"
+    />
 
     <ApiView :data="api" />
   </div>

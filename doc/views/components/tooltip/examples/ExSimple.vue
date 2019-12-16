@@ -1,44 +1,44 @@
 <template>
   <section>
     <s-tooltip
-      label="Tooltip right"
+      label="Tooltip right 提示文字"
       position="is-right"
     >
       <button class="button is-dark">
-        Right
+        右
       </button>
     </s-tooltip>
 
-    <s-tooltip label="Tooltip top">
+    <s-tooltip label="Tooltip top 提示文字">
       <button class="button is-dark">
-        Top (default)
+        上 (default)
       </button>
     </s-tooltip>
 
     <s-tooltip
-      label="Tooltip bottom"
+      label="Tooltip bottom 提示文字"
       position="is-bottom"
     >
       <button class="button is-dark">
-        Bottom
+        下
       </button>
     </s-tooltip>
 
     <s-tooltip
-      label="Tooltip left"
+      label="Tooltip left 提示文字"
       position="is-left"
     >
       <button class="button is-dark">
-        Left
+        左
       </button>
     </s-tooltip>
 
     <s-tooltip
-      label="delayed by 1000ms"
+      label="delayed by 1000ms 提示文字"
       :delay="1000"
     >
       <button class="button is-primary">
-        Delayed
+        延迟
       </button>
     </s-tooltip>
   </section>

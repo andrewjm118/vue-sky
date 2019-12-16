@@ -20,6 +20,8 @@ import Table from './components/table'
 import TableColumn from './components/table-column'
 import Tabs from './components/tabs'
 import TabItem from './components/tab-item'
+import Tooltip from './components/tooltip'
+import Notification from './components/notification'
 const components = {
   Alert,
   Icon,
@@ -42,7 +44,9 @@ const components = {
   Table,
   TableColumn,
   Tabs,
-  TabItem
+  TabItem,
+  Tooltip,
+  Notification
 }
 
 function install (Vue) {
@@ -61,6 +65,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
+  version: '1.0.0',
   install,
   ...components
 }

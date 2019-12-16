@@ -6,20 +6,18 @@
       vertical
     />
 
-    <p class="content">
-      Closable tags have a button that can be focused, it emits a <code>close</code> event when clicked or when <b>delete</b> key is pressed.
-    </p>
     <Example
       :component="ExClosable"
       :code="ExClosableCode"
-      title="Closable"
+      title="关闭标签"
+      desc="点击关闭,同时发出关闭事件"
       vertical
     />
 
     <Example
       :component="ExTaglist"
       :code="ExTaglistCode"
-      title="Tag list"
+      title="Tag 组"
       vertical
     />
 
@@ -28,7 +26,7 @@
       :code="ExTaglistAttachedCode"
       vertical
     >
-      <p>Use the <code>attached</code> prop to attach tags together.</p>
+      <p>使用<code>attached</code> prop将标签连接在一起。</p>
     </Example>
 
     <Example
@@ -36,7 +34,7 @@
       :code="ExFieldCombineCode"
       vertical
     >
-      <p>Combine with field to group attached tags.</p>
+      <p>字段组合分组。</p>
     </Example>
 
     <Example
@@ -45,7 +43,7 @@
       title="Sizes"
       vertical
     >
-      <p>Two additional sizes.</p>
+      <p>两个额外的大小.</p>
     </Example>
 
     <ApiView :data="api" />

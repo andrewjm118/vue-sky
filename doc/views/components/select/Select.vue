@@ -9,7 +9,7 @@
     <Example
       :component="ExMultiple"
       :code="ExMultipleCode"
-      title="Multiple"
+      title="多选"
       vertical
     />
 

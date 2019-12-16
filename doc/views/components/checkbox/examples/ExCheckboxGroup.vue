@@ -11,9 +11,18 @@
         <s-checkbox native-value="cat">
           Cat
         </s-checkbox>
+        <s-checkbox native-value="rabbit">
+          rabbit
+        </s-checkbox>
+        <s-checkbox native-value="monkey">
+          monkey
+        </s-checkbox>
       </s-checkbox-group>
     </div>
-    <p>{{ animals }}</p>
+    <p class="content">
+      <b>选择:</b>
+      {{ animals }}
+    </p>
   </section>
 </template>
 <script>

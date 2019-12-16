@@ -7,7 +7,10 @@ let config = {
   defaultInputHasCounter: true,
   defaultInputAutocomplete: 'on',
   defaultUseHtml5Validation: true,
-  defaultFieldLabelPosition: null
+  defaultFieldLabelPosition: null,
+  defaultTooltipType: 'is-primary',
+  defaultTooltipAnimated: false,
+  defaultTooltipDelay: 0
 }
 
 export default config

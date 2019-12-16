@@ -1,12 +1,12 @@
 <template>
   <section>
     <s-field>
-      <s-input placeholder="No label" />
+      <s-input placeholder="提示文字" />
     </s-field>
 
     <s-field label="Rounded">
       <s-input
-        placeholder="No label"
+        placeholder="提示文字"
         rounded
       />
     </s-field>
@@ -21,7 +21,7 @@
     <s-field
       label="Error"
       type="is-danger"
-      message="You can have a message too"
+      message="写一些提示消息"
     >
       <s-input placeholder="Error" />
     </s-field>

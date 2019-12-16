@@ -1,28 +1,28 @@
 <template>
   <section>
-    <s-field label="Name">
+    <s-field label="姓名">
       <s-input v-model="name" />
     </s-field>
 
     <s-field
       label="Email"
       type="is-danger"
-      message="This email is invalid"
+      message="邮箱必填项"
     >
       <s-input
         type="email"
-        value="john@"
+        value="63901040@qq.com"
         maxlength="30"
       />
     </s-field>
 
     <s-field
-      label="Username"
+      label="用户名"
       type="is-success"
-      message="This username is available"
+      message="用户名必填"
     >
       <s-input
-        value="johnsilver"
+        value="张三"
         maxlength="30"
       />
     </s-field>
@@ -48,7 +48,7 @@
 export default {
   data () {
     return {
-      name: 'John Silver'
+      name: 'andrew jm'
     }
   }
 }

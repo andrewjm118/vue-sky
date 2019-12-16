@@ -1,58 +1,58 @@
 <template>
   <section>
     <s-tooltip
-      label="Text is dashed"
+      label="虚线"
       dashed
     >
-      Simple text
+      虚线
     </s-tooltip>
 
     <s-tooltip
-      label="Maybe you like a little animation"
+      label="你喜欢的动画"
       position="is-bottom"
       animated
     >
       <button class="button">
-        Animated
+        动画
       </button>
     </s-tooltip>
 
     <s-tooltip
-      label="You prefer dark?"
+      label="你喜欢深色风格?"
       type="is-dark"
       position="is-bottom"
     >
       <button class="button">
-        Dark
+        深色
       </button>
     </s-tooltip>
 
     <s-tooltip
-      label="Or light?"
+      label="亮色?"
       type="is-light"
       position="is-bottom"
     >
       <button class="button">
-        Light
+        亮色
       </button>
     </s-tooltip>
 
     <s-tooltip
-      label="I'm never closing"
+      label="我一直在"
       always
     >
       <button class="button">
-        Always
+        一直在
       </button>
     </s-tooltip>
 
     <s-tooltip
-      label="I'm square"
+      label="我是正方形"
       position="is-bottom"
       square
     >
       <button class="button">
-        Square
+        正方形
       </button>
     </s-tooltip>
   </section>

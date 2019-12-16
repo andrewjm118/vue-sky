@@ -3,7 +3,7 @@ export default [
     props: [
       {
         name: '<code>type</code>',
-        description: 'Type (color) of the tooltip',
+        description: 'tooltip风格',
         type: 'String',
         values: `<code>is-white</code>, <code>is-black</code>, <code>is-light</code>,
                     <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>,
@@ -13,70 +13,70 @@ export default [
       },
       {
         name: '<code>active</code>',
-        description: 'Whether tooltip is active or not',
+        description: '工具提示是否激活',
         type: 'Boolean',
         values: '—',
         default: '<code>true</code>'
       },
       {
         name: '<code>label</code>',
-        description: 'Tooltip text',
+        description: 'Tooltip 提示文本',
         type: 'String',
         values: '—',
         default: '—'
       },
       {
         name: '<code>position</code>',
-        description: 'Tooltip position in relation to the element',
+        description: '提示位置',
         type: 'String',
         values: '<code>is-top</code>, <code>is-bottom</code>, <code>is-left</code>, <code>is-right</code>',
         default: '<code>is-top</code>'
       },
       {
         name: '<code>always</code>',
-        description: 'Tooltip will be always active',
+        description: '工具提示将始终处于活动状态',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>animated</code>',
-        description: 'Tooltip will have a little fade animation',
+        description: '工具提示将有一个淡出动画',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>square</code>',
-        description: 'Tooltip will be square (not rounded corners)',
+        description: '工具提示将是正方形(不是圆角)',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>dashed</code>',
-        description: 'Tooltip slot will have a dashed underline',
+        description: '工具提示将有一个虚线下划线',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>multilined</code>',
-        description: 'Tooltip will be multilined',
+        description: '多行提示框',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>size</code>',
-        description: 'Tooltip multiline size (only works for multilined tooltips)',
+        description: '工具提示多行大小(仅适用于多行工具提示)',
         type: 'String',
         values: '<code>is-small</code>, <code>is-medium</code>, <code>is-large</code>',
         default: '<code>is-medium</code>'
       },
       {
         name: '<code>delay</code>',
-        description: 'Tooltip delay before it appears (number in ms)',
+        description: '工具显示前延迟(毫秒)',
         type: 'Number',
         values: '—',
         default: '<code>0</code>'

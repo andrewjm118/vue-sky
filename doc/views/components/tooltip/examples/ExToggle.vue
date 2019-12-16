@@ -4,12 +4,12 @@
       class="button is-primary"
       @click="active = !active"
     >
-      Toggle
+      切换
     </button>
     <hr>
 
     <s-tooltip
-      label="I'm never closing"
+      label="我从来没有关闭"
       :active="active"
       always
     >
@@ -19,7 +19,7 @@
     </s-tooltip>
 
     <s-tooltip
-      label="Tooltip right"
+      label="Tooltip 右测显示"
       position="is-right"
       :active="active"
     >

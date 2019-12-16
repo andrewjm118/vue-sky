@@ -9,21 +9,14 @@
     <Example
       :component="ExTypes"
       :code="ExTypesCode"
-      title="Types"
-      vertical
-    />
-
-    <Example
-      :component="ExSizes"
-      :code="ExSizesCode"
-      title="Sizes"
+      title="类型和大小"
       vertical
     />
 
     <Example
       :component="ExStyles"
       :code="ExStylesCode"
-      title="Styles"
+      title="样式"
       vertical
     />
 
@@ -40,9 +33,6 @@ import ExSimpleCode from '!!raw-loader!./examples/ExSimple'
 import ExTypes from './examples/ExTypes'
 import ExTypesCode from '!!raw-loader!./examples/ExTypes'
 
-import ExSizes from './examples/ExSizes'
-import ExSizesCode from '!!raw-loader!./examples/ExSizes'
-
 import ExStyles from './examples/ExStyles'
 import ExStylesCode from '!!raw-loader!./examples/ExStyles'
 
@@ -52,11 +42,9 @@ export default {
       api,
       ExSimple,
       ExTypes,
-      ExSizes,
       ExStyles,
       ExSimpleCode,
       ExTypesCode,
-      ExSizesCode,
       ExStylesCode
     }
   }

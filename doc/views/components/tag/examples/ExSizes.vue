@@ -1,19 +1,19 @@
 <template>
   <section>
     <s-tag type="is-dark">
-      Default
+      默认
     </s-tag>
     <s-tag
       type="is-primary"
       size="is-medium"
     >
-      Medium
+      中等
     </s-tag>
     <s-tag
       type="is-info"
       size="is-large"
     >
-      Large
+      大
     </s-tag>
   </section>
 </template>

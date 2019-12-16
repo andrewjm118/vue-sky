@@ -4,49 +4,49 @@ export default [
     props: [
       {
         name: '<code>v-model</code>',
-        description: 'Binding value, tab index',
+        description: '绑定值tab的索引',
         type: 'Number',
         values: '—',
         default: '<code>0</code>'
       },
       {
         name: '<code>expanded</code>',
-        description: 'Make tab full width',
+        description: '自适应宽度',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>animated</code>',
-        description: 'Tabs have slide animation',
+        description: '切换动画效果',
         type: 'Boolean',
         values: '—',
         default: '<code>true</code>'
       },
       {
         name: '<code>type</code>',
-        description: 'Type/Style of the tab, optional',
+        description: '可选tab切换样式',
         type: 'String',
         values: '<code>is-boxed</code>, <code>is-toggle</code>',
         default: '—'
       },
       {
         name: '<code>size</code>',
-        description: 'Size of the tab, optional',
+        description: '可选tab大小',
         type: 'String',
         values: '<code>is-small</code>, <code>is-medium</code>, <code>is-large</code>',
         default: '—'
       },
       {
         name: '<code>position</code>',
-        description: 'Position of the tab, optional',
+        description: '可选tab位置',
         type: 'String',
         values: '<code>is-centered</code>, <code>is-right</code>',
         default: '—'
       },
       {
         name: '<code>destroy-on-hide</code>',
-        description: 'Destroy tabitem on hide',
+        description: '销毁隐藏的tabitem',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
@@ -54,13 +54,8 @@ export default [
     ],
     events: [
       {
-        name: '<code>input</code>',
-        description: 'Triggers when tab is clicked',
-        parameters: '<code>index: Number</code>'
-      },
-      {
         name: '<code>change</code>',
-        description: 'Triggers when active tab is changed',
+        description: '更改活动选项卡时触发',
         parameters: '<code>index: Number</code>'
       }
     ]
@@ -70,35 +65,35 @@ export default [
     props: [
       {
         name: '<code>label</code>',
-        description: 'Tab label',
+        description: 'Tab名称',
         type: 'String',
         values: '—',
         default: '—'
       },
       {
         name: '<code>icon</code>',
-        description: 'Icon name',
+        description: '图标名称',
         type: 'String',
         values: '—',
         default: '—'
       },
       {
         name: '<code>icon-pack</code>',
-        description: 'Icon pack to use',
+        description: '哪种图标',
         type: 'String',
         values: '—',
         default: '<code>mdi</code>'
       },
       {
         name: '<code>disabled</code>',
-        description: 'Item is disabled',
+        description: '禁用项',
         type: 'Boolean',
         values: '-',
         default: 'false'
       },
       {
         name: '<code>visible</code>',
-        description: 'Item is visible',
+        description: '启用项',
         type: 'Boolean',
         values: '-',
         default: 'true'
@@ -107,12 +102,12 @@ export default [
     slots: [
       {
         name: 'default',
-        description: 'Tab item body',
+        description: 'tab内容',
         props: '—'
       },
       {
         name: '<code>header</code>',
-        description: 'Tab item custom header',
+        description: 'tab头部',
         props: '—'
       }
     ]

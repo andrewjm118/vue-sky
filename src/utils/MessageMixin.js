@@ -1,5 +1,9 @@
+import Icon from '../components/icon/'
 
 export default {
+  components: {
+    [Icon.name]: Icon
+  },
   props: {
     active: {
       type: Boolean,

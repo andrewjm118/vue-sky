@@ -4,75 +4,60 @@ export default [
     props: [
       {
         name: '<code>type</code>',
-        description: 'Type (color) of the icon, optional',
+        description: '可选tab样式',
         type: 'String',
         values: `<code>is-white</code>, <code>is-black</code>, <code>is-light</code>,
                     <code>is-dark</code>, <code>is-primary</code>, <code>is-info</code>, <code>is-success</code>,
-                    <code>is-warning</code>, <code>is-danger</code>,
-                    and any other colors you've set in the <code>$colors</code> list on Sass`,
+                    <code>is-warning</code>, <code>is-danger</code>`,
         default: '—'
       },
       {
         name: '<code>size</code>',
-        description: 'Size of the tab, optional',
+        description: '可选tab大小',
         type: 'String',
         values: '<code>is-medium</code>, <code>is-large</code>',
         default: '—'
       },
       {
         name: '<code>rounded</code>',
-        description: 'Tag border rounded',
+        description: 'tab圆角',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>closable</code>',
-        description: 'Add close/delete button to the tag',
+        description: '带关闭按钮',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>attached</code>',
-        description: 'Close/delete button style equal to attached tags',
+        description: '连接多个tag标签',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>ellipsis</code>',
-        description: 'Adds ellipsis to not overflow the text',
+        description: '添加省略号以使文本不溢出',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
-      },
-      {
-        name: '<code>tabstop</code>',
-        description: 'If should stop when using tab key',
-        type: 'Boolean',
-        values: '—',
-        default: '<code>true</code>'
       },
       {
         name: '<code>disabled</code>',
-        description: 'Disable delete button',
+        description: '禁用',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
-      },
-      {
-        name: '<code>aria-close-label</code>',
-        description: 'Accessibility label for the close button',
-        type: 'String',
-        values: '—',
-        default: '-'
       }
     ],
     events: [
       {
         name: '<code>close</code>',
-        description: 'Triggers when close/delete button is clicked or <b>delete</b> key is pressed',
+        description: '关闭按钮触发事件',
         parameters: '—'
       }
     ]
@@ -82,7 +67,7 @@ export default [
     props: [
       {
         name: '<code>attached</code>',
-        description: 'Tabs inside are attached together',
+        description: '多个tag连接在一起',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'

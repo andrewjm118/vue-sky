@@ -119,9 +119,9 @@ export default {
         { label: 'Props (if scoped)', field: 'props', renderHtml: true }
       ],
       eventsColumns: [
-        { label: 'Name', field: 'name', renderHtml: true },
-        { label: 'Description', field: 'description', renderHtml: true },
-        { label: 'Parameters', field: 'parameters', renderHtml: true }
+        { label: '名称', field: 'name', renderHtml: true },
+        { label: '描述', field: 'description', renderHtml: true },
+        { label: '参数', field: 'parameters', renderHtml: true }
       ],
       methodsColumns: [
         { label: 'Name', field: 'name', renderHtml: true },

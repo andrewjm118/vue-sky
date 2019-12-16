@@ -4,15 +4,15 @@
     expanded
   >
     <s-tab-item
-      label="Pictures"
+      label="图片"
       icon="google-photos"
     />
     <s-tab-item
-      label="Music"
+      label="音乐"
       icon="library-music"
     />
     <s-tab-item
-      label="Videos"
+      label="视频"
       icon="video"
     />
   </s-tabs>

@@ -8,7 +8,7 @@
         aria-close-label="Close tag"
         @close="isTag1Active = false"
       >
-        Colored closable tag label
+        蓝色标签
       </s-tag>
     </div>
 
@@ -20,7 +20,7 @@
         aria-close-label="Close tag"
         @close="isTag2Active = false"
       >
-        Attached closable tag label
+        标签
       </s-tag>
     </div>
 
@@ -33,7 +33,7 @@
         aria-close-label="Close tag"
         @close="isTag3Active = false"
       >
-        Colored attached closable tag label
+        红色标签
       </s-tag>
     </div>
   </section>

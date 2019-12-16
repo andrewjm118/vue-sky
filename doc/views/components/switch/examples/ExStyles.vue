@@ -10,7 +10,7 @@
     </s-field>
     <s-field grouped>
       <s-field label="Type">
-        <b-select
+        <s-select
           v-model="type"
           placeholder="Type"
         >
@@ -29,10 +29,10 @@
           <option value="is-danger">
             Danger
           </option>
-        </b-select>
+        </s-select>
       </s-field>
       <s-field label="Size">
-        <b-select v-model="size">
+        <s-select v-model="size">
           <option value="">
             Default
           </option>
@@ -45,7 +45,7 @@
           <option value="is-large">
             is-large
           </option>
-        </b-select>
+        </s-select>
       </s-field>
     </s-field>
     <s-switch

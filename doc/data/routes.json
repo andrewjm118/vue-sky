@@ -55,7 +55,7 @@
 
     "documentation/alert": {
         "title": "alert 警告提示",
-        "subtitle": "<strong>Three ways</strong> to install and use Buefy",
+        "subtitle": "警告提示，展现需要关注的信息。",
         "path": "/documentation/alert",
         "githubPath": "pages/installation/Start.vue",
         "menu": "documentation",
@@ -153,7 +153,7 @@
     },
     "documentation/tooltip": {
         "title": "Tooltip 文字提示",
-        "subtitle": "Display a brief helper text to your user",
+        "subtitle": "向用户显示简短的辅助文本",
         "path": "/documentation/tooltip",
         "githubPath": "pages/components/tooltip/Tooltip.vue",
         "menu": "documentation",
@@ -190,7 +190,7 @@
     },
     "documentation/tabs": {
         "title": "Tabs 标签页",
-        "subtitle": "Responsive horizontal navigation tabs, switch between contents with ease",
+        "subtitle": "响应式水平导航标签，轻松切换内容",
         "path": "/documentation/tabs",
         "githubPath": "pages/components/tabs/Tabs.vue",
         "menu": "documentation",
@@ -202,7 +202,6 @@
     },
     "documentation/tag": {
         "title": "Tag 标签",
-        "subtitle": "Tag labels to insert anywhere",
         "path": "/documentation/tag",
         "githubPath": "pages/components/tag/Tag.vue",
         "menu": "documentation",
@@ -298,7 +297,7 @@
     },
     "documentation/select": {
         "title": "Select 选择框",
-        "subtitle": "Select an item in a dropdown list. Use with <strong>Field</strong> to access all functionalities",
+        "subtitle": "在下拉列表中选择一个项目",
         "path": "/documentation/select",
         "githubPath": "pages/components/select/Select.vue",
         "menu": "documentation",
@@ -334,7 +333,7 @@
     },
     "documentation/radio": {
         "title": "Radio 单选框",
-        "subtitle": "Select an option from a set",
+        "subtitle": "从集合中选择一个选项",
         "path": "/documentation/radio",
         "githubPath": "pages/components/radio/Radio.vue",
         "menu": "documentation",
@@ -346,7 +345,7 @@
     },
     "documentation/switch": {
         "title": "Switch 开关",
-        "subtitle": "Switch between two opposing states",
+        "subtitle": "状态之间切换",
         "path": "/documentation/switch",
         "githubPath": "pages/components/switch/Switch.vue",
         "menu": "documentation",

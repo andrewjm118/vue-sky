@@ -6,42 +6,38 @@
       title="基础案例"
     />
 
-    <!--  <Example
+    <Example
       :component="ExControll"
       :code="ExControllCode"
-      title="ceshi"
+      title="受控的 checkbox"
+      desc="联动 checkbox"
       vertical
     />
- -->
+
     <Example
       :component="ExCheckboxGroup"
       :code="ExCheckboxGroupCode"
-      title="ceshi111"
+      title="Checkbox 组"
+      desc="设置 Checkbox 组"
       vertical
     />
-    <!-- <Example
-      :component="ExArray"
-      :code="ExArrayCode"
-      title="Grouped (Array)"
-      vertical
-    >
-      <p>Just add the same <code>v-model</code> to multiple Checkboxes, and set a <code>native-value</code>.</p>
-    </Example>
 
     <Example
-      :component="ExSizes"
-      :code="ExSizesCode"
-      title="Sizes"
+      :component="ExIndeterminate"
+      :code="ExIndeterminateCode"
+      title="全选"
+      desc="在实现全选效果时，你可能会用到 indeterminate 属性"
       vertical
     />
 
     <Example
       :component="ExTypes"
       :code="ExTypesCode"
-      title="Types"
+      title="大小和样式"
+      desc="checkbox不同的大小和显示样子"
       vertical
     />
-
+    <!--
     <Example
       :component="ExCheckboxButton"
       :code="ExCheckboxButtonCode"
@@ -64,19 +60,23 @@ import api from './api/checkbox'
 import ExSimple from './examples/ExSimple'
 import ExSimpleCode from '!!raw-loader!./examples/ExSimple'
 
-/* import ExControll from './examples/ExControll'
-import ExControllCode from '!!raw-loader!./examples/ExControll' */
+import ExControll from './examples/ExControll'
+import ExControllCode from '!!raw-loader!./examples/ExControll'
 
 import ExCheckboxGroup from './examples/ExCheckboxGroup'
 import ExCheckboxGroupCode from '!!raw-loader!./examples/ExCheckboxGroup'
-/* import ExArray from './examples/ExArray'
+
+import ExArray from './examples/ExArray'
 import ExArrayCode from '!!raw-loader!./examples/ExArray'
 
-import ExSizes from './examples/ExSizes'
-import ExSizesCode from '!!raw-loader!./examples/ExSizes'
+import ExIndeterminate from './examples/ExIndeterminate'
+import ExIndeterminateCode from '!!raw-loader!./examples/ExIndeterminate'
 
 import ExTypes from './examples/ExTypes'
 import ExTypesCode from '!!raw-loader!./examples/ExTypes'
+/*
+import ExSizes from './examples/ExSizes'
+import ExSizesCode from '!!raw-loader!./examples/ExSizes'
 
 import ExCheckboxButton from './examples/ExCheckboxButton'
 import ExCheckboxButtonCode from '!!raw-loader!./examples/ExCheckboxButton' */
@@ -87,16 +87,19 @@ export default {
       api,
       ExSimple,
       ExSimpleCode,
-      /* ExControll,
-      ExControllCode, */
+      ExControll,
+      ExControllCode,
       ExCheckboxGroup,
-      ExCheckboxGroupCode
-      /* ExArray,
+      ExCheckboxGroupCode,
+      ExArray,
       ExArrayCode,
+      ExIndeterminate,
+      ExIndeterminateCode,
+      ExTypes,
+      ExTypesCode
+      /*
       ExSizes,
       ExSizesCode,
-      ExTypes,
-      ExTypesCode,
       ExCheckboxButton,
       ExCheckboxButtonCode */
     }

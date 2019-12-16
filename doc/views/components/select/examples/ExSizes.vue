@@ -6,11 +6,11 @@
         size="is-small"
         expanded
       >
-        <option value="flint">
-          Flint
+        <option value="选项1">
+          选项1
         </option>
-        <option value="silver">
-          Silver
+        <option value="选项2">
+          选项2
         </option>
       </s-select>
     </s-field>
@@ -20,11 +20,11 @@
         placeholder="Default"
         expanded
       >
-        <option value="flint">
-          Flint
+        <option value="选项1">
+          选项1
         </option>
-        <option value="silver">
-          Silver
+        <option value="选项2">
+          选项2
         </option>
       </s-select>
     </s-field>
@@ -35,11 +35,11 @@
         size="is-medium"
         expanded
       >
-        <option value="flint">
-          Flint
+        <option value="选项1">
+          选项1
         </option>
-        <option value="silver">
-          Silver
+        <option value="选项2">
+          选项2
         </option>
       </s-select>
     </s-field>
@@ -50,11 +50,11 @@
         size="is-large"
         expanded
       >
-        <option value="flint">
-          Flint
+        <option value="选项1">
+          选项1
         </option>
-        <option value="silver">
-          Silver
+        <option value="选项2">
+          选项2
         </option>
       </s-select>
     </s-field>

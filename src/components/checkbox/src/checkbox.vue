@@ -12,8 +12,6 @@
       type="checkbox"
       :value="nativeValue"
       :disabled="disabled"
-      :true-value="trueValue"
-      :false-value="falseValue"
       @change="handleChange"
       @focus="handleFocus"
       @blur="handleBlur"
@@ -22,9 +20,8 @@
       v-else
       type="checkbox"
       :checked="value"
+      :indeterminate.prop="indeterminate"
       :disabled="disabled"
-      :true-value="trueValue"
-      :false-value="falseValue"
       @change="handleChange"
       @focus="handleFocus"
       @blur="handleBlur"
@@ -54,15 +51,7 @@ export default {
     disabled: Boolean,
     required: Boolean,
     name: String,
-    size: String,
-    trueValue: {
-      type: [String, Number, Boolean, Function, Object, Array],
-      default: true
-    },
-    falseValue: {
-      type: [String, Number, Boolean, Function, Object, Array],
-      default: false
-    }
+    size: String
   },
   computed: {
     computedValue: {

@@ -5,36 +5,36 @@
       group-multiline
     >
       <div class="control">
-        <s-taglist attached>
+        <s-tag-list attached>
           <s-tag type="is-dark">
             npm
           </s-tag>
           <s-tag type="is-info">
             0.5.1
           </s-tag>
-        </s-taglist>
+        </s-tag-list>
       </div>
 
       <div class="control">
-        <s-taglist attached>
+        <s-tag-list attached>
           <s-tag type="is-dark">
             downloads
           </s-tag>
           <s-tag type="is-success">
             15k
           </s-tag>
-        </s-taglist>
+        </s-tag-list>
       </div>
 
       <div class="control">
-        <s-taglist attached>
+        <s-tag-list attached>
           <s-tag type="is-dark">
             chat
           </s-tag>
           <s-tag type="is-primary">
             on discord
           </s-tag>
-        </s-taglist>
+        </s-tag-list>
       </div>
     </s-field>
     <br>

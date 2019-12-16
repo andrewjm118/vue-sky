@@ -1,0 +1,9 @@
+<template>
+  <section>
+    <s-alert
+      :closable="false"
+    >
+      Text
+    </s-alert>
+  </section>
+</template>

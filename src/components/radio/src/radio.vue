@@ -16,6 +16,7 @@
       :name="name"
       :value="nativeValue"
       @click.stop
+      @change="handleChange"
     >
     <span
       class="check"
@@ -59,6 +60,9 @@ export default {
     }
   },
   methods: {
+    handleChange (event) {
+      this.$emit('change', event.target.checked)
+    },
     focus () {
       this.$refs.input.focus()
     }

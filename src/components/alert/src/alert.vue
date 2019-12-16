@@ -2,7 +2,7 @@
   <transition name="fade">
     <div
       v-show="isActive"
-      class="notification"
+      class="alert"
       :class="[type,position]"
     >
       <button
@@ -20,7 +20,7 @@
             :icon="icon"
             :pack="iconPack"
             both
-            size="is-large"
+
             aria-hidden
           />
         </div>
@@ -31,6 +31,11 @@
             v-text="message"
           />
           <slot v-else />
+          <p
+            v-if="desc"
+            class="text"
+            v-text="desc"
+          />
         </div>
       </div>
     </div>
@@ -50,6 +55,7 @@ export default {
       default: true
     },
     message: String,
+    desc: String,
     type: String,
     hasIcon: Boolean,
     iconPack: String
@@ -89,3 +95,6 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+
+</style>

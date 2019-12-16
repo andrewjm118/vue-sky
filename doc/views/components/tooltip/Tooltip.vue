@@ -9,23 +9,21 @@
     <Example
       :component="ExStyles"
       :code="ExStylesCode"
-      title="Styles"
+      title="风格"
       vertical
     />
 
     <Example
       :component="ExMultilined"
       :code="ExMultilinedCode"
-      title="Multilined"
+      title="多行数据"
+      desc="可以有多行"
       vertical
-    >
-      <p>Well, it's not always <em>that</em> brief.</p>
-    </Example>
+    />
 
     <Example
       :component="ExToggle"
       :code="ExToggleCode"
-      title="Toggle"
       vertical
     />
 

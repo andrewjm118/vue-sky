@@ -1,7 +1,7 @@
 <template>
   <section>
     <h3 class="subtitle">
-      With Material Design Icons
+      使用 Material Design Icons 图标
     </h3>
     <s-field>
       <s-select
@@ -32,7 +32,7 @@
     </s-field>
 
     <h3 class="subtitle">
-      With FontAwesome
+      使用 FontAwesome 图标
     </h3>
     <s-field>
       <s-select

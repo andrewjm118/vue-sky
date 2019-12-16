@@ -4,35 +4,35 @@
       <s-radio
         v-model="radio"
         name="name"
-        native-value="Flint"
+        native-value="北京"
       >
-        Flint
+        北京
       </s-radio>
       <s-radio
         v-model="radio"
         name="name"
-        native-value="Silver"
+        native-value="上海"
       >
-        Silver
+        上海
       </s-radio>
       <s-radio
         v-model="radio"
         name="name"
-        native-value="Jack"
+        native-value="广州"
       >
-        Jack
+        广州
       </s-radio>
       <s-radio
         v-model="radio"
         name="name"
-        native-value="Vane"
+        native-value="深圳"
         disabled
       >
-        Vane
+        深圳
       </s-radio>
     </div>
     <p class="content">
-      <b>Selection:</b>
+      <b>选择:</b>
       {{ radio }}
     </p>
   </section>
@@ -42,7 +42,7 @@
 export default {
   data () {
     return {
-      radio: 'Jack'
+      radio: '广州'
     }
   }
 }

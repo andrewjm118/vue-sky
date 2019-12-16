@@ -46,7 +46,8 @@ const router = new Router({
         route('documentation/loading', 'components/loading/Loading'),
         route('documentation/dropdown', 'components/dropdown/Dropdown'),
         route('documentation/icon', 'installation/Icon'),
-        route('documentation/custom', 'installation/Custom')
+        route('documentation/custom', 'installation/Custom'),
+        route('documentation/alert', 'components/alert/Alert')
 
       ]
     },

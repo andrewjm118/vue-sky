@@ -1,19 +1,19 @@
 <template>
-  <s-taglist>
+  <s-tag-list>
     <s-tag type="is-info">
-      First
+      第一
     </s-tag>
     <s-tag type="is-info">
-      Second
+      第二
     </s-tag>
     <s-tag type="is-info">
-      Third
+      第三
     </s-tag>
     <s-tag type="is-info">
-      Fourth
+      第四
     </s-tag>
     <s-tag type="is-info">
-      Fifth
+      第五
     </s-tag>
-  </s-taglist>
+  </s-tag-list>
 </template>

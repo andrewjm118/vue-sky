@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="content">
+    <!-- <div class="content">
       <p>These components should be used as a <strong>direct child</strong> of Field:</p>
       <ul>
         <li>Autocomplete</li>
@@ -14,9 +14,7 @@
         <li>Upload</li>
         <li><code>.control</code> elements (html class)</li>
       </ul>
-    </div>
-
-    <hr>
+    </div> -->
 
     <Example
       :component="ExSimple"

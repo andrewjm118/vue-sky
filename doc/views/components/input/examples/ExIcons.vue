@@ -1,11 +1,11 @@
 <template>
   <section>
     <h3 class="subtitle">
-      With Material Design Icons
+      使用 Material Design Icons 图标
     </h3>
     <s-field>
       <s-input
-        placeholder="Search..."
+        placeholder="搜索..."
         type="search"
         icon="magnify"
       />
@@ -19,19 +19,12 @@
       />
     </s-field>
 
-    <s-field>
-      <s-input
-        placeholder="Credit card"
-        icon="credit-card"
-      />
-    </s-field>
-
     <h3 class="subtitle">
-      With FontAwesome
+      使用 FontAwesome 图标
     </h3>
     <s-field>
       <s-input
-        placeholder="Search..."
+        placeholder="搜索..."
         type="search"
         icon-pack="fas"
         icon="search"
@@ -44,14 +37,6 @@
         type="email"
         icon-pack="fas"
         icon="envelope"
-      />
-    </s-field>
-
-    <s-field>
-      <s-input
-        placeholder="Credit card"
-        icon-pack="far"
-        icon="credit-card"
       />
     </s-field>
   </section>
