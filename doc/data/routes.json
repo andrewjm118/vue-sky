@@ -237,7 +237,7 @@
     },
     "documentation/notification": {
         "title": "Notification 通知提醒",
-        "subtitle": "Bold notification blocks to alert your users of something",
+        "subtitle": "提醒用户一些事情",
         "path": "/documentation/notification",
         "githubPath": "pages/components/notification/Notification.vue",
         "menu": "documentation",
@@ -261,7 +261,7 @@
     },
     "documentation/loading": {
         "title": "Loading 载入",
-        "subtitle": "A simple loading overlay",
+        "subtitle": "一个等待加载框",
         "path": "/documentation/loading",
         "githubPath": "pages/components/loading/Loading.vue",
         "menu": "documentation",

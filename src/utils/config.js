@@ -10,7 +10,11 @@ let config = {
   defaultFieldLabelPosition: null,
   defaultTooltipType: 'is-primary',
   defaultTooltipAnimated: false,
-  defaultTooltipDelay: 0
+  defaultTooltipDelay: 0,
+  defaultContainerElement: null,
+  defaultNoticeQueue: true,
+  defaultNotificationDuration: 2000
+
 }
 
 export default config

@@ -32,7 +32,7 @@ export default {
       type: String,
       default: 'fade'
     },
-    container: [Object, Function],
+    container: [Object, Function, HTMLElement],
     canCancel: {
       type: Boolean,
       default: false

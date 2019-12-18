@@ -4,32 +4,26 @@
       :component="ExSimple"
       :code="ExSimpleCode"
     >
-      <p>The Loading will be closed after about 10 seconds, by pressing escape or by clicking outside.</p>
+      <p>加载将在大约10秒后关闭，按esc或单击圆圈外部。</p>
       <p>
-        Use <code>:is-full-page="false"</code> to limit loader to its container.<br>
-        In this case, the container element should be positioned as <code>position: relative</code>.
+        用 <code>:is-full-page="false"</code> 将加载程序限制在其容器中.<br>
+        在这种情况下，容器元素应该定位为 <code>position: relative</code>.
       </p>
     </Example>
 
     <Example
       :component="ExProgrammatically"
       :code="ExProgrammaticallyCode"
-      title="Programmatically opening"
+      title="程序控制载入"
     >
-      <p>When you want to close the Loading, call the <code>close()</code> method from the component.</p>
+      <p>当您想要关闭加载时，从组件中调用<code>close()</code>方法。</p>
     </Example>
 
     <Example
       :component="ExTemplated"
       :code="ExTemplatedCode"
-      title="Templated"
-    >
-      <div class="tags has-addons">
-        <span class="tag is-success">New!</span>
-        <span class="tag is-info">0.7.5</span>
-      </div>
-      <p>Slot is available for loading content.</p>
-    </Example>
+      title="图标样式"
+    />
 
     <ApiView :data="api" />
   </div>

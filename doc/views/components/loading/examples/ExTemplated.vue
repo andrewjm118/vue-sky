@@ -5,16 +5,16 @@
         class="button is-primary is-medium"
         @click="openLoading"
       >
-        Launch loading
+        启动加载
       </button>
     </s-field>
     <s-field>
-      <b-switch v-model="isFullPage">
-        Display loader over full page
-      </b-switch>
+      <s-switch v-model="isFullPage">
+        显示加载整个页面
+      </s-switch>
     </s-field>
     <s-notification :closable="false">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
+      在此容器内
       <s-loading
         :is-full-page="isFullPage"
         :active.sync="isLoading"

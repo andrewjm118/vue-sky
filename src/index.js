@@ -12,7 +12,6 @@ import TagList from './components/tag-list'
 import Input from './components/input'
 import Field from './components/field'
 import Select from './components/select'
-import Loading from './components/loading'
 import Dropdown from './components/dropdown'
 import DropdownItem from './components/dropdown-item'
 import Pagination from './components/pagination'
@@ -21,7 +20,9 @@ import TableColumn from './components/table-column'
 import Tabs from './components/tabs'
 import TabItem from './components/tab-item'
 import Tooltip from './components/tooltip'
-import Notification from './components/notification'
+import { Notification, NotificationProgrammatic } from './components/notification'
+import { Loading, LoadingProgrammatic } from './components/loading'
+
 const components = {
   Alert,
   Icon,
@@ -55,6 +56,8 @@ function install (Vue) {
       Vue.component(components[item].name, components[item])
     }
   }
+  Vue.prototype.$notify = NotificationProgrammatic
+  Vue.prototype.$loading = LoadingProgrammatic
 }
 
 /**

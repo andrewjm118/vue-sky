@@ -4,21 +4,21 @@
       class="button is-medium"
       @click="simple"
     >
-      Launch notification (default)
+      发布通知(默认)
     </button>
 
     <button
       class="button is-medium is-success"
       @click="success"
     >
-      Launch notification (custom)
+      发布通知(自定义1)
     </button>
 
     <button
       class="button is-medium is-danger"
       @click="danger"
     >
-      Launch notification (custom)
+      发布通知(自定义2)
     </button>
   </section>
 </template>
@@ -27,18 +27,19 @@
 export default {
   methods: {
     simple () {
-      this.$buefy.notification.open('Something happened')
+      this.$notify.open('发生了一件事')
     },
     success () {
-      this.$buefy.notification.open({
-        message: 'Something happened correctly!',
-        type: 'is-success'
+      this.$notify.open({
+        message: '发生了一件事正确!',
+        type: 'is-success',
+        queue: false
       })
     },
     danger () {
-      this.$buefy.notification.open({
+      this.$notify.open({
         duration: 5000,
-        message: 'Something\'s not good, also I\'m on bottom',
+        message: '发生了错误的事',
         position: 'is-bottom-right',
         type: 'is-danger',
         hasIcon: true

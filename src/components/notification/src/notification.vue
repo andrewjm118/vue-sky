@@ -3,12 +3,13 @@
     <article
       v-show="isActive"
       class="notification"
-      :class="[type,position]"
+      :class="[type, position]"
     >
       <button
         v-if="closable"
         class="delete"
         type="button"
+        :aria-label="ariaCloseLabel"
         @click="close"
       />
       <div class="media">
@@ -21,6 +22,7 @@
             :pack="iconPack"
             both
             size="is-large"
+            aria-hidden
           />
         </div>
         <div class="media-content">
@@ -38,11 +40,13 @@
 
 <script>
 import MessageMixin from '../../../utils/MessageMixin'
+
 export default {
   name: 'SNotification',
   mixins: [MessageMixin],
   props: {
-    position: String
+    position: String,
+    ariaCloseLabel: String
   }
 }
 </script>
