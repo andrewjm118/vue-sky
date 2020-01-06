@@ -65,6 +65,20 @@
             "documentation/alert"
         ]
     },
+
+    "documentation/affix": {
+        "title": "Affix 固钉",
+        "subtitle": "将元素钉在固定位置，常用于顶部菜单或者侧边菜单",
+        "path": "/documentation/affix",
+        "githubPath": "pages/installation/Start.vue",
+        "menu": "documentation",
+        "breadcrumb": [
+            "/",
+            "documentation",
+            "documentation/affix"
+        ]
+    },
+
     "documentation/custom": {
         "title": "自定义配置",
         "subtitle": "配置默认组件功能，自定义个性化定制",
@@ -127,7 +141,7 @@
     },
     "documentation/dropdown": {
         "title": "Dropdown 下拉菜单",
-        "subtitle": "Dropdowns are very versatile, can used as a quick menu or even like a select for discoverable content",
+        "subtitle": "下拉菜单功能非常多，可以用作快速菜单",
         "path": "/documentation/dropdown",
         "githubPath": "pages/components/dropdown/Dropdown.vue",
         "menu": "documentation",

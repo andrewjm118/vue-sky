@@ -3,15 +3,15 @@
     <div class="navbar-brand">
       <a class="navbar-item">
         <img
-          src="/static/img/buefy-logo.png"
-          alt="Buefy"
+          src="/static/img/logo.png"
+          alt="Vue"
         >
       </a>
-      <a class="navbar-item"><b-icon
+      <a class="navbar-item"><s-icon
         pack="fab"
         icon="github"
       /></a>
-      <a class="navbar-item"><b-icon
+      <a class="navbar-item"><s-icon
         pack="fab"
         icon="twitter"
       /></a>
@@ -29,7 +29,7 @@
             role="button"
           >
             <span>Login</span>
-            <b-icon icon="menu-down" />
+            <s-icon icon="menu-down" />
           </a>
 
           <s-dropdown-item
@@ -45,7 +45,7 @@
               >
                 <section class="modal-card-body">
                   <s-field label="Email">
-                    <b-input
+                    <s-input
                       type="email"
                       placeholder="Your email"
                       required
@@ -53,7 +53,7 @@
                   </s-field>
 
                   <s-field label="Password">
-                    <b-input
+                    <s-input
                       type="password"
                       password-reveal
                       placeholder="Your password"

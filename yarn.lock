@@ -3469,6 +3469,10 @@ gaze@^1.0.0:
   dependencies:
     globule "^1.0.0"
 
+gemini-scrollbar@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/gemini-scrollbar/-/gemini-scrollbar-1.5.3.tgz#7abc916e103e11f983f15856ef8c583cedef95cf"
+
 generic-names@^1.0.2:
   version "1.0.3"
   resolved "https://registry.npm.taobao.org/generic-names/download/generic-names-1.0.3.tgz#2d786a121aee508876796939e8e3bff836c20917"

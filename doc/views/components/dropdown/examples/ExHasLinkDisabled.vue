@@ -3,8 +3,8 @@
     <div class="navbar-brand">
       <a class="navbar-item">
         <img
-          src="/static/img/buefy-logo.png"
-          alt="Buefy"
+          src="/static/img/logo.png"
+          alt="Vue"
         >
       </a>
       <a class="navbar-item"><s-icon
@@ -37,7 +37,7 @@
             custom
             aria-role="menuitem"
           >
-            Logged as <b>Rafael Beraldo</b>
+            Logged as <b>Andrew Jm</b>
           </s-dropdown-item>
           <hr class="dropdown-divider">
           <s-dropdown-item

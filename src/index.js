@@ -20,6 +20,8 @@ import TableColumn from './components/table-column'
 import Tabs from './components/tabs'
 import TabItem from './components/tab-item'
 import Tooltip from './components/tooltip'
+import Affix from './components/affix'
+import Scrollbar from './components/scrollbar'
 import { Notification, NotificationProgrammatic } from './components/notification'
 import { Loading, LoadingProgrammatic } from './components/loading'
 
@@ -47,6 +49,8 @@ const components = {
   Tabs,
   TabItem,
   Tooltip,
+  Affix,
+  Scrollbar,
   Notification
 }
 

@@ -3,48 +3,39 @@
     <Example
       :component="ExSimple"
       :code="ExSimpleCode"
-    >
-      <p>
-        While it appear as a modal for tablet and smartphones,
-        Dropdowns with <code>hoverable</code> prop won't change it's behavior to avoid any malfunction with hover.
-      </p>
-    </Example>
+    />
 
     <Example
       :component="ExContentPosition"
       :code="ExContentPositionCode"
-      title="Content and position"
+      title="内容和位置"
       paddingless
     >
-      <p>Add the <code>custom</code> prop to the item to add <strong>any type of content</strong>.</p>
-      <p>Add the <code>:focusable="false"</code> prop to the <code>dropdown-item</code> if you dont want it to be focusable.</p>
+      <p>添加 <code>custom</code> prop 将自定义内容添加到项目中。</p>
+      <p>添加 <code>:focusable="false"</code> 如果你不希望它是可聚焦的。</p>
     </Example>
 
     <Example
       :component="ExHasLinkDisabled"
       :code="ExHasLinkDisabledCode"
-      title="Links within"
+      title="链接"
       paddingless
     >
-      <p>Add the <code>has-link</code> prop to add a anchor tag / router-link, or <code>disabled</code> to disable an item.</p>
+      <p>添加<code>has-link</code> prop 去添加一个锚点或者路由链接</p>
     </Example>
 
     <Example
       :component="ExCustomize"
       :code="ExCustomizeCode"
-      title="Customizing with v-model"
+      title="定制模式"
     />
 
     <Example
       :component="ExCustomizeMultiple"
       :code="ExCustomizeMultipleCode"
-      title="Multiple"
+      title="多选"
     >
-      <div class="tags has-addons">
-        <span class="tag is-success">New!</span>
-        <span class="tag is-info">0.7.6</span>
-      </div>
-      <p>Add the <code>multiple</code> prop to select one or more item.</p>
+      <p>Add the <code>multiple</code> prop 选择一个或多个</p>
     </Example>
 
     <ApiView :data="api" />

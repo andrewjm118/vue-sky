@@ -1,42 +1,49 @@
 <template>
   <aside class="sidebar">
     <div class="sidebar-menu">
-      <template v-for="(items, i) in data">
-        <p
-          :key="items.category"
-          class="sidebar-label"
-        >
-          {{ items.category }}
-        </p>
-        <ul :key="i">
-          <li
-            v-for="item in normalizedData(items.pages)"
-            :key="item.title"
+      <!-- <s-scrollbar
+        class="main-scrollbar"
+        @resize="mainScrollbarResize"
+      > -->
+      <s-affix>
+        <template v-for="(items, i) in data">
+          <p
+            :key="items.category"
+            class="sidebar-label"
           >
-            <router-link
-              v-if="item.title"
-              :to="item.path"
+            {{ items.category }}
+          </p>
+          <ul :key="i">
+            <li
+              v-for="item in normalizedData(items.pages)"
+              :key="item.title"
             >
-              <span class="sidebar-menu-text">{{ item.title }}</span>
-            </router-link>
+              <router-link
+                v-if="item.title"
+                :to="item.path"
+              >
+                <span class="sidebar-menu-text">{{ item.title }}</span>
+              </router-link>
 
-            <!-- submenu -->
-            <template v-else>
-              <p>{{ item.category }}</p>
-              <ul>
-                <li
-                  v-for="subItem in normalizedData(item.pages)"
-                  :key="subItem.title"
-                >
-                  <router-link :to="subItem.path">
-                    <span class="sidebar-menu-text">{{ subItem.title }}</span>
-                  </router-link>
-                </li>
-              </ul>
-            </template>
-          </li>
-        </ul>
-      </template>
+              <!-- submenu -->
+              <template v-else>
+                <p>{{ item.category }}</p>
+                <ul>
+                  <li
+                    v-for="subItem in normalizedData(item.pages)"
+                    :key="subItem.title"
+                  >
+                    <router-link :to="subItem.path">
+                      <span class="sidebar-menu-text">{{ subItem.title }}</span>
+                    </router-link>
+                  </li>
+                </ul>
+              </template>
+            </li>
+          </ul>
+        </template>
+      <!--  </s-scrollbar> -->
+      </s-affix>
     </div>
   </aside>
 </template>
@@ -49,6 +56,9 @@ export default {
     data: Array
   },
   methods: {
+    mainScrollbarResize () {
+      console.log('mainScrollbarResize')
+    },
     normalizedData (items) {
       return items.map((item) => {
         return typeof item === 'string'
@@ -65,3 +75,9 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+  .main-scrollbar {
+    height: 800px;
+    overflow: auto;
+  }
+</style>

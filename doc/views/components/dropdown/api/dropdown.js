@@ -4,70 +4,63 @@ export default [
     props: [
       {
         name: '<code>v-model</code>',
-        description: 'Binding value',
+        description: '绑定值',
         type: 'Any',
         values: '—',
         default: '<code>null</code>'
       },
       {
         name: '<code>hoverable</code>',
-        description: 'Dropdown will be triggered by hover instead of click',
+        description: '下拉菜单将由鼠标悬停而不是点击来触发',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>position</code>',
-        description: 'Optional, position of the dropdown relative to the trigger',
+        description: '可选，下拉菜单相对于触发的位置',
         type: 'String',
         values: '<code>is-top-right</code>, <code>is-top-left</code>, <code>is-bottom-left</code>',
         default: 'Bottom right'
       },
       {
         name: '<code>disabled</code>',
-        description: 'Disables dropdown',
+        description: '禁用 dropdown',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>animation</code>',
-        description: 'Custom animation (transition name)',
+        description: '自定义动画 (transition name)',
         type: 'String',
         values: '—',
         default: '<code>fade</code>'
       },
       {
         name: '<code>inline</code>',
-        description: 'Dropdown content (items) are shown inline, trigger is removed',
+        description: '下拉式内容(项目)以内联方式显示，删除触发器',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>mobile-modal</code>',
-        description: 'Dropdown content (items) are shown into a modal on mobile',
+        description: '移动设备上显示模式',
         type: 'Boolean',
         values: '—',
         default: '<code>true</code>'
       },
       {
-        name: '<code>aria-role</code>',
-        description: 'Role attribute to be passed to list container for better accessibility. Use <code>menu</code> only in situations where your dropdown is related to navigation menus.',
-        type: 'String',
-        values: '<code>list</code>, <code>menu</code>',
-        default: '—'
-      },
-      {
         name: '<code>multiple</code>',
-        description: 'Allows multiple selections',
+        description: '允许多选',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>can-close</code>',
-        description: 'Can close dropdown by pressing escape or by clicking outside',
+        description: '可以通过按esc或单击外部来关闭下拉菜单吗',
         type: 'Boolean, Array',
         values: '<code>escape</code>, <code>outside</code>',
         default: '<code>true</code>'
@@ -81,26 +74,26 @@ export default [
       },
       {
         name: '<code>trigger</code>',
-        description: 'Trigger content for the dropdown',
+        description: '触发下拉菜单的内容',
         props: '—'
       }
     ],
     events: [
       {
         name: '<code>change</code>',
-        description: 'Triggers when an item is selected',
+        description: '当一个项被选中时触发',
         parameters: '<code>value: String</code>'
       },
       {
         name: '<code>active-change</code>',
-        description: 'Triggers when dropdown is activated or deactivated (visibility of list)',
+        description: '下拉菜单激活或停用时触发',
         parameters: '<code>active: Boolean</code>'
       }
     ],
     methods: [
       {
         name: '<code>toggle</code>',
-        description: 'Toggle activation (dropdown list visibility)'
+        description: '切换激活'
       }
     ]
   },
@@ -109,72 +102,58 @@ export default [
     props: [
       {
         name: '<code>value</code>',
-        description: 'The value that will be returned on events and v-model',
+        description: '当前值',
         type: 'Any',
         values: '—',
         default: '<code>null</code>'
       },
       {
         name: '<code>separator</code>',
-        description: 'Set the item to be a separator',
+        description: '设置项目分割线',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>disabled</code>',
-        description: 'Item is disabled',
+        description: '禁用项',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>focusable</code>',
-        description: 'Item can be focused',
+        description: '可以被聚焦',
         type: 'Boolean',
         values: '—',
         default: '<code>true</code>'
       },
       {
         name: '<code>custom</code>',
-        description: 'Item is not a clickable item',
+        description: '不是可点击项',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>has-link</code>',
-        description: 'Use it if your item is an anchor tag or <code>router-link</code>',
+        description: '有链接',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
       },
       {
         name: '<code>paddingless</code>',
-        description: 'Remove padding',
+        description: '删除填充',
         type: 'Boolean',
         values: '—',
         default: '<code>false</code>'
-      },
-      {
-        name: '<code>aria-role</code>',
-        description: 'Role attribute to be passed to list item for better accessibility. Use <code>menuitem</code> only in situations where your dropdown is related to navigation menus.',
-        type: 'String',
-        values: '<code>listitem</code>, <code>menuitem</code>',
-        default: '—'
-      }
-    ],
-    slots: [
-      {
-        name: 'default',
-        description: '',
-        props: ''
       }
     ],
     events: [
       {
         name: '<code>click</code>',
-        description: 'Triggers when the item is clicked',
+        description: '点击事件',
         parameters: '—'
       }
     ]

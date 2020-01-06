@@ -10,11 +10,11 @@
     >
       <template v-if="isPublic">
         <s-icon icon="earth" />
-        <span>Public</span>
+        <span>公共</span>
       </template>
       <template v-else>
         <s-icon icon="account-multiple" />
-        <span>Friends</span>
+        <span>朋友</span>
       </template>
       <s-icon icon="menu-down" />
     </button>
@@ -29,8 +29,8 @@
           icon="earth"
         />
         <div class="media-content">
-          <h3>Public</h3>
-          <small>Everyone can see</small>
+          <h3>公共</h3>
+          <small>每个人都能看到</small>
         </div>
       </div>
     </s-dropdown-item>
@@ -45,8 +45,8 @@
           icon="account-multiple"
         />
         <div class="media-content">
-          <h3>Friends</h3>
-          <small>Only friends can see</small>
+          <h3>朋友</h3>
+          <small>仅朋友可见</small>
         </div>
       </div>
     </s-dropdown-item>

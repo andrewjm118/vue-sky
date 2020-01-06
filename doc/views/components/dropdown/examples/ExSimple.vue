@@ -5,18 +5,18 @@
         slot="trigger"
         class="button is-primary"
       >
-        <span>Click me!</span>
+        <span>点击我!</span>
         <s-icon icon="menu-down" />
       </button>
 
       <s-dropdown-item aria-role="listitem">
-        Action
+        动作1
       </s-dropdown-item>
       <s-dropdown-item aria-role="listitem">
-        Another action
+        动作2
       </s-dropdown-item>
       <s-dropdown-item aria-role="listitem">
-        Something else
+        其他
       </s-dropdown-item>
     </s-dropdown>
 
@@ -28,18 +28,18 @@
         slot="trigger"
         class="button is-info"
       >
-        <span>Hover me!</span>
+        <span>悬停!</span>
         <s-icon icon="menu-down" />
       </button>
 
       <s-dropdown-item aria-role="listitem">
-        Action
+        动作1
       </s-dropdown-item>
       <s-dropdown-item aria-role="listitem">
-        Another action
+        动作2
       </s-dropdown-item>
       <s-dropdown-item aria-role="listitem">
-        Something else
+        其他
       </s-dropdown-item>
     </s-dropdown>
 
@@ -56,13 +56,13 @@
       </button>
 
       <s-dropdown-item aria-role="listitem">
-        Action
+        动作1
       </s-dropdown-item>
       <s-dropdown-item aria-role="listitem">
-        Another action
+        动作2
       </s-dropdown-item>
       <s-dropdown-item aria-role="listitem">
-        Something else
+        其他
       </s-dropdown-item>
     </s-dropdown>
 
@@ -72,17 +72,17 @@
         class="tag is-success"
         role="button"
       >
-        Custom trigger
+        自定义触发
       </p>
 
       <s-dropdown-item aria-role="listitem">
-        Action
+        动作1
       </s-dropdown-item>
       <s-dropdown-item aria-role="listitem">
-        Another action
+        动作2
       </s-dropdown-item>
       <s-dropdown-item aria-role="listitem">
-        Something else
+        其他
       </s-dropdown-item>
     </s-dropdown>
   </section>
