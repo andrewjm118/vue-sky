@@ -103,10 +103,6 @@
       :sort-icon="sortIcon"
       :sort-icon-size="sortIconSize"
       default-sort="user.first_name"
-      aria-next-label="Next page"
-      aria-previous-label="Previous page"
-      aria-page-label="Page"
-      aria-current-label="Current page"
     >
       <template slot-scope="props">
         <s-table-column

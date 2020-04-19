@@ -30,37 +30,35 @@
     <Example
       :component="ExCheckable"
       :code="ExCheckableCode"
-      title="Checkable"
+      title="复选框"
     >
-      <p>You can add checkboxes to rows by using the <code>checkable</code> prop.</p>
+      <p>您可以使用<code>checkable</code>将复选框添加到行中。</p>
       <p>
-        To show which rows are <strong>checked</strong>, you have to pass the corresponding object array to the <code>checked-rows</code> prop.
-        Adding the <code>.sync</code> modifier will make it two-way binding — checked object array will mutate if user clicks on checkboxes.
+        为了显示哪些行被选中，您必须将相应的对象数组传递给被选中的行。
       </p>
-      <p>A slot called <code>bottom-left</code> is available whenever the table is checkable or paginated, you can add anything in there.</p>
+      <p>
+        添加同步修饰符将使其双向绑定——如果用户单击复选框，选中的对象数组将发生变化。
+      </p>
+      <p>只要表格有复选框或分页的，就会有一个左下角的槽<code>bottom-left</code>，您可以在其中添加任何内容。</p>
     </Example>
 
     <Example
       :component="ExPaginationSort"
       :code="ExPaginationSortCode"
-      title="Pagination and sorting"
+      title="分页和排序"
     >
-      <p>To make a column sortable, add the <code>sortable</code> prop on it and specify a <code>field</code> name.</p>
-      <p>You can also use the <code>default-sort</code> prop to determine the default sort column and order. The column must be <code>sortable</code> to work.</p>
-      <p>The <code>default-sort-direction</code> prop can be set to determine the default sort column direction on the first click.</p>
-      <p>A slot called <code>bottom-left</code> is available whenever the table is checkable or paginated, you can add anything in there.</p>
+      <p>列排序添加 <code>sortable</code> 在属性 <code>field</code> name.</p>
+      <p>您还可以使用default-sort来确定默认的排序列和顺序。该列必须是可排序的。</p>
+      <p>可以设置<code>default-sort-direction</code>来确定第一次单击时的默认排序列方向。</p>
+      <p>只要表格可检索或分页的，就会有一个左下角的槽<code>bottom-left</code>，您可以在其中添加任何内容。</p>
     </Example>
 
     <Example
       :component="ExDetailedRow"
       :code="ExDetailedRowCode"
-      title="Detailed rows"
+      title="详情行"
     >
       <p>You can have detailed rows by adding a <code>detail</code> named scoped slot and the <code>detailed</code> prop.</p>
-      <div class="tags has-addons">
-        <span class="tag is-success">New!</span>
-        <span class="tag is-info">0.7.2</span>
-      </div>
       <p> You can also toggle row detail programmatically using <code>toggleDetails</code> method and <code>:show-detail-icon="false"</code> if you want to hide chevron icon.</p>
     </Example>
 

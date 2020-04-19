@@ -10,38 +10,31 @@
         @click="checkedRows = []"
       >
         <s-icon icon="close" />
-        <span>Clear checked</span>
+        <span>清空选中项</span>
       </button>
       <s-select v-model="checkboxPosition">
         <option value="left">
-          Checkbox at left
+          左侧选中框
         </option>
         <option value="right">
-          Checkbox at right
+          右侧选中框
         </option>
       </s-select>
     </s-field>
 
-    <s-tabs>
-      <s-tab-item label="Table">
-        <s-table
-          :data="data"
-          :columns="columns"
-          :checked-rows.sync="checkedRows"
-          :is-row-checkable="(row) => row.id !== 3"
-          checkable
-          :checkbox-position="checkboxPosition"
-        >
-          <template slot="bottom-left">
-            <b>Total checked</b>: {{ checkedRows.length }}
-          </template>
-        </s-table>
-      </s-tab-item>
-
-      <s-tab-item label="Checked rows">
-        <pre>{{ checkedRows }}</pre>
-      </s-tab-item>
-    </s-tabs>
+    <s-table
+      :data="data"
+      :columns="columns"
+      :checked-rows.sync="checkedRows"
+      :is-row-checkable="(row) => row.id !== 3"
+      checkable
+      :checkbox-position="checkboxPosition"
+    >
+      <template slot="bottom-left">
+        <b>选中总数</b>: {{ checkedRows.length }}
+      </template>
+    </s-table>
+    <pre>{{ checkedRows }}</pre>
   </section>
 </template>
 
@@ -49,11 +42,11 @@
 export default {
   data () {
     const data = [
-      { id: 1, first_name: 'Jesse', last_name: 'Simmons', date: '2016-10-15 13:43:27', gender: 'Male' },
-      { id: 2, first_name: 'John', last_name: 'Jacobs', date: '2016-12-15 06:00:53', gender: 'Male' },
-      { id: 3, first_name: 'Tina', last_name: 'Gilbert', date: '2016-04-26 06:26:28', gender: 'Female' },
-      { id: 4, first_name: 'Clarence', last_name: 'Flores', date: '2016-04-10 10:28:46', gender: 'Male' },
-      { id: 5, first_name: 'Anne', last_name: 'Lee', date: '2016-12-06 14:38:38', gender: 'Female' }
+      { id: 1, name: '库里', age: '21', date: '2019-10-15 13:43:27', gender: '男' },
+      { id: 2, name: '詹姆斯', age: '22', date: '2019-12-15 06:00:53', gender: '女' },
+      { id: 3, name: '科比', age: '33', date: '2019-04-26 06:26:28', gender: '女' },
+      { id: 4, name: '帕克', age: '44', date: '2019-04-10 10:28:46', gender: '男' },
+      { id: 5, name: '托马斯', age: '265', date: '2019-12-06 14:38:38', gender: '男' }
     ]
 
     return {
@@ -68,21 +61,21 @@ export default {
           numeric: true
         },
         {
-          field: 'first_name',
-          label: 'First Name'
+          field: 'name',
+          label: '姓名'
         },
         {
-          field: 'last_name',
-          label: 'Last Name'
+          field: 'age',
+          label: '年龄'
         },
         {
           field: 'date',
-          label: 'Date',
+          label: '日期',
           centered: true
         },
         {
           field: 'gender',
-          label: 'Gender'
+          label: '性别'
         }
       ]
     }

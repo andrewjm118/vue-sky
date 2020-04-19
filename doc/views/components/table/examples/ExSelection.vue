@@ -6,7 +6,7 @@
       @click="selected = null"
     >
       <s-icon icon="close" />
-      <span>Clear selected</span>
+      <span>清除选中</span>
     </button>
     <s-table
       :data="data"
