@@ -30,7 +30,7 @@
       :default-sort="['name', 'asc']"
       detail-key="name"
       :show-detail-icon="showDetailIcon"
-      @details-open="(row, index) => $buefy.toast.open(`Expanded ${row.name}`)"
+      @details-open="(row, index) => $notify.open(`Expanded ${row.name}`)"
     >
       <template slot-scope="props">
         <s-table-column

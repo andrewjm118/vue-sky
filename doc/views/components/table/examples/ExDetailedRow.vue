@@ -6,7 +6,7 @@
     >
       <div class="control">
         <s-switch v-model="showDetailIcon">
-          Show detail icon
+          展示详细图标
         </s-switch>
       </div>
     </s-field>
@@ -33,7 +33,7 @@
 
         <s-table-column
           field="user.first_name"
-          label="First Name"
+          label="名字"
           sortable
         >
           <template v-if="showDetailIcon">
@@ -48,7 +48,7 @@
 
         <s-table-column
           field="user.last_name"
-          label="Last Name"
+          label="内容"
           sortable
         >
           {{ props.row.user.last_name }}
@@ -56,7 +56,7 @@
 
         <s-table-column
           field="date"
-          label="Date"
+          label="日期"
           sortable
           centered
         >
@@ -69,7 +69,7 @@
           <span>
             <s-icon
               pack="fas"
-              :icon="props.row.gender === 'Male' ? 'mars' : 'venus'"
+              :icon="props.row.gender === '男' ? 'mars' : 'venus'"
             />
             {{ props.row.gender }}
           </span>
@@ -83,7 +83,7 @@
         <article class="media">
           <figure class="media-left">
             <p class="image is-64x64">
-              <img src="/static/img/placeholder-128x128.png">
+              <img src="/static/img/mao.png">
             </p>
           </figure>
           <div class="media-content">

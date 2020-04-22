@@ -6,10 +6,10 @@
     >
       <s-select v-model="defaultSortDirection">
         <option value="asc">
-          Default sort direction: ASC
+          排序方式: 升序
         </option>
         <option value="desc">
-          Default sort direction: DESC
+          排序方式: 降序
         </option>
       </s-select>
       <s-select
@@ -17,16 +17,16 @@
         :disabled="!isPaginated"
       >
         <option value="5">
-          5 per page
+          每页5条
         </option>
         <option value="10">
-          10 per page
+          每页10条
         </option>
         <option value="15">
-          15 per page
+          每页15条
         </option>
         <option value="20">
-          20 per page
+          每页20条
         </option>
       </s-select>
       <div class="control">
@@ -35,12 +35,12 @@
           :disabled="!isPaginated"
           @click="currentPage = 2"
         >
-          Set page to 2
+          查看第二页
         </button>
       </div>
       <div class="control is-flex">
         <s-switch v-model="isPaginated">
-          Paginated
+          分页
         </s-switch>
       </div>
       <div class="control is-flex">
@@ -48,7 +48,7 @@
           v-model="isPaginationSimple"
           :disabled="!isPaginated"
         >
-          Simple pagination
+          简单分页
         </s-switch>
       </div>
       <s-select
@@ -56,38 +56,38 @@
         :disabled="!isPaginated"
       >
         <option value="bottom">
-          bottom pagination
+          分页在下面
         </option>
         <option value="top">
-          top pagination
+          分页在上面
         </option>
         <option value="both">
-          both
+          两边都有
         </option>
       </s-select>
       <s-select v-model="sortIcon">
         <option value="arrow-up">
-          Arrow sort icon
+          箭头图标样式1
         </option>
         <option value="menu-up">
-          Caret sort icon
+          箭头图标样式2
         </option>
         <option value="chevron-up">
-          Chevron sort icon
+          箭头图标样式3
         </option>
       </s-select>
       <s-select v-model="sortIconSize">
         <option value="is-small">
-          Small sort icon
+          小标题
         </option>
         <option value="">
-          Regular sort icon
+          正常标题
         </option>
         <option value="is-medium">
-          Medium sort icon
+          中等标题
         </option>
         <option value="is-large">
-          Large sort icon
+          大标题
         </option>
       </s-select>
     </s-field>
@@ -117,7 +117,7 @@
 
         <s-table-column
           field="user.first_name"
-          label="First Name"
+          label="姓名"
           sortable
         >
           {{ props.row.user.first_name }}
@@ -125,7 +125,7 @@
 
         <s-table-column
           field="user.last_name"
-          label="Last Name"
+          label="内容"
           sortable
         >
           {{ props.row.user.last_name }}
@@ -133,7 +133,7 @@
 
         <s-table-column
           field="date"
-          label="Date"
+          label="时间"
           sortable
           centered
         >
@@ -142,11 +142,11 @@
           </span>
         </s-table-column>
 
-        <s-table-column label="Gender">
+        <s-table-column label="性别">
           <span>
             <s-icon
               pack="fas"
-              :icon="props.row.gender === 'Male' ? 'mars' : 'venus'"
+              :icon="props.row.gender === '男' ? 'mars' : 'venus'"
             />
             {{ props.row.gender }}
           </span>
@@ -166,7 +166,7 @@ export default {
       isPaginated: true,
       isPaginationSimple: false,
       paginationPosition: 'bottom',
-      defaultSortDirection: 'asc',
+      defaultSortDirection: 'desc',
       sortIcon: 'arrow-up',
       sortIconSize: 'is-small',
       currentPage: 1,

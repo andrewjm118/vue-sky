@@ -58,45 +58,11 @@
       :code="ExDetailedRowCode"
       title="详情行"
     >
-      <p>You can have detailed rows by adding a <code>detail</code> named scoped slot and the <code>detailed</code> prop.</p>
-      <p> You can also toggle row detail programmatically using <code>toggleDetails</code> method and <code>:show-detail-icon="false"</code> if you want to hide chevron icon.</p>
+      <p>您可以通过添加slot<code>detail</code> 和 slot-scope <code>prop</code> 来获得详细的行</p>
+      <p>如果您想隐藏图标，还可以使用toggleDetails方法和:show-detail-icon="false"以编程方式切换行细节。</p>
     </Example>
 
-    <Example
-      :component="ExCustomDetailedRow"
-      :code="ExCustomDetailedRowCode"
-      title="Custom Detailed rows"
-    >
-      <p>You can add anything you like into the <code>detail</code> named scoped by providing the <code>customDetailRow</code> prop to the table.</p>
-      <s-message type="is-warning">
-        Be cautious when using a custom detailed row and toggling the display of columns,
-        as you will have to manage either the content within (with <code>colspan</code>) or the columns themselves dependent on the content displayed.
-      </s-message>
-    </Example>
-
-    <Example
-      :component="ExRowStatus"
-      :code="ExRowStatusCode"
-      title="Row status"
-    >
-      <p>Use the <code>row-class</code> prop to return a class name. It's a function that receives <code>row</code> and <code>index</code> parameters.</p>
-      <p>Note that <strong>you have to style the class yourself</strong>.</p>
-    </Example>
-
-    <Example
-      :component="ExCustomHeaders"
-      :code="ExCustomHeadersCode"
-      title="Custom headers"
-    >
-      <p>
-        By adding a scoped slot named <code>header</code> in table component you can customize the headers.
-        Use the <code>meta</code> prop on column to pass anything you may need.
-      </p>
-      <p>
-        Previous scoped slot named <code>header</code> in table will be deprecated.
-      </p>
-    </Example>
-
+    <!--
     <Example
       :component="ExToggleColumns"
       :code="ExToggleColumnsCode"
@@ -106,13 +72,15 @@
         Always use the <code>visible</code> prop to hide/show columns, and <strong>NOT</strong> <code>v-if</code> or <code>v-show</code>.
       </s-message>
     </Example>
-
+  -->
+    <!--
     <Example
       :component="ExFooter"
       :code="ExFooterCode"
       title="Footer"
     />
-
+    -->
+    <!--
     <Example
       :component="ExAsyncData"
       :code="ExAsyncDataCode"
@@ -129,7 +97,8 @@
         >TMDb</a>.</small>
       </p>
     </Example>
-
+ -->
+    <!--
     <Example
       :component="ExDraggableRows"
       :code="ExDraggableRowsCode"
@@ -140,7 +109,7 @@
         <code>dragover</code> and <code>drop</code> events
       </p>
     </Example>
-
+-->
     <ApiView :data="api" />
   </div>
 </template>
