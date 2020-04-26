@@ -22,6 +22,8 @@ import TabItem from './components/tab-item'
 import Tooltip from './components/tooltip'
 import Affix from './components/affix'
 import Scrollbar from './components/scrollbar'
+import Form from './components/form'
+import FormItem from './components/form-item'
 import { Notification, NotificationProgrammatic } from './components/notification'
 import { Loading, LoadingProgrammatic } from './components/loading'
 
@@ -51,7 +53,9 @@ const components = {
   Tooltip,
   Affix,
   Scrollbar,
-  Notification
+  Notification,
+  Form,
+  FormItem
 }
 
 function install (Vue) {
