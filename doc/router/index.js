@@ -35,6 +35,7 @@ const router = new Router({
         route('documentation/table', 'components/table/Table'),
         route('documentation/checkbox', 'components/checkbox/Checkbox'),
         route('documentation/field', 'components/field/Field'),
+        route('documentation/form', 'components/form/Form'),
         route('documentation/input', 'components/input/Input'),
         route('documentation/radio', 'components/radio/Radio'),
         route('documentation/select', 'components/select/Select'),

@@ -63,12 +63,14 @@
 import Icon from '../../icon'
 import config from '../../../utils/config'
 import FormElementMixin from '../../../utils/FormElementMixin'
+import emitter from '../../../mixins/emitter'
+
 export default {
   name: 'SInput',
   components: {
     [Icon.name]: Icon
   },
-  mixins: [FormElementMixin],
+  mixins: [FormElementMixin, emitter],
   inheritAttrs: false,
   props: {
     value: [Number, String],
@@ -170,6 +172,7 @@ export default {
   watch: {
     value (value) {
       this.newValue = value
+      this.dispatch('SFormItem', 'form.change', [value])
     }
   },
   methods: {

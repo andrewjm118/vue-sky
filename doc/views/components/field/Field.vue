@@ -15,13 +15,6 @@
         <li><code>.control</code> elements (html class)</li>
       </ul>
     </div> -->
-
-    <Example
-      :component="ExCeshi"
-      :code="ExCeshiCode"
-      vertical
-    />
-
     <Example
       :component="ExSimple"
       :code="ExSimpleCode"
@@ -155,9 +148,6 @@
 <script>
 import api from './api/field'
 
-import ExCeshi from './examples/ExCeshi'
-import ExCeshiCode from '!!raw-loader!./examples/ExCeshi'
-
 import ExSimple from './examples/ExSimple'
 import ExSimpleCode from '!!raw-loader!./examples/ExSimple'
 
@@ -198,7 +188,6 @@ export default {
   data () {
     return {
       api,
-      ExCeshi,
       ExSimple,
       ExObjectSyntax,
       ExAddons,
@@ -211,7 +200,6 @@ export default {
       ExCustomClass,
       ExLabelSlot,
       ExLabelPosition,
-      ExCeshiCode,
       ExSimpleCode,
       ExObjectSyntaxCode,
       ExAddonsCode,

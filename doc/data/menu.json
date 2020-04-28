@@ -23,6 +23,7 @@
                     "category": "表单",
                     "pages": [
                         "documentation/checkbox",
+                        "documentation/form",
                         "documentation/field",
                         "documentation/input",        
                         "documentation/radio",

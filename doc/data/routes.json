@@ -297,6 +297,18 @@
             "documentation/field"
         ]
     },
+    "documentation/form": {
+        "title": "Form 表单",
+        "subtitle": "由输入框、选择器、单选框、多选框等控件组成，用以收集、校验、提交数据",
+        "path": "/documentation/form",
+        "githubPath": "pages/components/form/Form.vue",
+        "menu": "documentation",
+        "breadcrumb": [
+            "/",
+            "documentation",
+            "documentation/form"
+        ]
+    },
     "documentation/input": {
         "title": "Input 输入框",
         "subtitle": "Get user Input. Use with <strong>Field</strong> to access all functionalities",

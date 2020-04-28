@@ -1,11 +1,3 @@
-<!--
- * @Author: your name
- * @Date: 2020-04-26 16:18:56
- * @LastEditTime: 2020-04-27 16:49:25
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \vue-sky\doc\views\components\field\examples\ExCeshi.vue
- -->
 <template>
   <s-form
     ref="form"

@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@mdi/font": "^4.3.95",
-    "async-validator": "^3.2.4",
+    "async-validator": "1.8.1",
     "bulma": "^0.7.5",
     "gemini-scrollbar": "^1.5.3",
     "vee-validate": "^3.2.1",
