@@ -5,6 +5,16 @@
     :rules="rules"
   >
     <s-form-item
+      label="日期测试"
+      prop="riqi"
+    >
+      <s-datepicker
+        placeholder="Click to select..."
+        icon="calendar-today"
+        trap-focus
+      />
+    </s-form-item>
+    <s-form-item
       label="手机号"
       prop="tel"
     >

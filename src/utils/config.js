@@ -13,8 +13,38 @@ let config = {
   defaultTooltipDelay: 0,
   defaultContainerElement: null,
   defaultNoticeQueue: true,
-  defaultNotificationDuration: 2000
-
+  defaultNotificationDuration: 2000,
+  defaultDatepickerMobileNative: true,
+  defaultTimepickerMobileNative: true,
+  defaultTaginputHasCounter: true,
+  defaultDropdownMobileModal: true,
+  defaultDatepickerYearsRange: [-100, 3],
+  defaultDatepickerNearbyMonthDays: true,
+  defaultDatepickerNearbySelectableMonthDays: false,
+  defaultDatepickerShowWeekNumber: false,
+  defaultMonthNames: [
+    '一月',
+    '二月',
+    '三月',
+    '四月',
+    '五月',
+    '六月',
+    '七月',
+    '八月',
+    '九月',
+    '十月',
+    '十一月',
+    '十二月'
+  ],
+  defaultDayNames: [
+    '日',
+    '一',
+    '二',
+    '三',
+    '四',
+    '五',
+    '六'
+  ]
 }
 
 export default config

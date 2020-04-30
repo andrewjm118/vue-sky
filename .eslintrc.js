@@ -26,6 +26,7 @@ module.exports = {
     'vue/no-reserved-keys' : 'off',
     'import/no-webpack-loader-syntax' : 'off',
     'vue/no-v-html' : 'off',
+    'vue/no-template-shadow' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
 }

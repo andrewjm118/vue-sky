@@ -309,6 +309,30 @@
             "documentation/form"
         ]
     },
+    "documentation/datepicker": {
+        "title": "Datepicker 日期",
+        "subtitle": "日期组件",
+        "path": "/documentation/datepicker",
+        "githubPath": "views/components/datepicker/Datepicker.vue",
+        "menu": "documentation",
+        "breadcrumb": [
+            "/",
+            "documentation",
+            "documentation/datepicker"
+        ]
+    },
+    "documentation/datetimepicker": {
+        "title": "Datetimepicker 时间",
+        "subtitle": "日期组件",
+        "path": "/documentation/datetimepicker",
+        "githubPath": "views/components/datetimepicker/Datepicker.vue",
+        "menu": "documentation",
+        "breadcrumb": [
+            "/",
+            "documentation",
+            "documentation/datetimepicker"
+        ]
+    },
     "documentation/input": {
         "title": "Input 输入框",
         "subtitle": "Get user Input. Use with <strong>Field</strong> to access all functionalities",
@@ -380,19 +404,6 @@
             "documentation",
             "documentation/switch"
         ]
-    },
-    "documentation/datepicker": {
-        "title": "Datepicker",
-        "subtitle": "An input with a simple dropdown/modal for selecting a date, uses native datepicker for mobile",
-        "path": "/documentation/datepicker",
-        "githubPath": "pages/components/datepicker/Datepicker.vue",
-        "menu": "documentation",
-        "breadcrumb": [
-            "/",
-            "documentation",
-            "documentation/datepicker"
-        ],
-        "isUpdated": "true"
     },
     "documentation/timepicker": {
         "title": "Timepicker",

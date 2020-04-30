@@ -24,10 +24,20 @@ import Affix from './components/affix'
 import Scrollbar from './components/scrollbar'
 import Form from './components/form'
 import FormItem from './components/form-item'
+import Datepicker from './components/datepicker'
+import DatepickerTable from './components/datepicker-table'
+import DatepickerMonth from './components/datepicker-month'
+import DatepickerTableRow from './components/datepicker-table-row'
+import Datetimepicker from './components/datetimepicker'
 import { Notification, NotificationProgrammatic } from './components/notification'
 import { Loading, LoadingProgrammatic } from './components/loading'
 
 const components = {
+  Datepicker,
+  DatepickerTable,
+  DatepickerMonth,
+  DatepickerTableRow,
+  Datetimepicker,
   Alert,
   Icon,
   Button,
@@ -56,6 +66,7 @@ const components = {
   Notification,
   Form,
   FormItem
+
 }
 
 function install (Vue) {

@@ -28,7 +28,9 @@
                         "documentation/input",        
                         "documentation/radio",
                         "documentation/select",
-                        "documentation/switch"
+                        "documentation/switch",
+                        "documentation/datepicker",
+                        "documentation/datetimepicker"
                     ]
                 },
                 {
