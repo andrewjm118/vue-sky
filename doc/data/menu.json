@@ -40,7 +40,8 @@
                         "documentation/table",
                         "documentation/tabs",
                         "documentation/tag",
-                        "documentation/tooltip"
+                        "documentation/tooltip",
+                        "documentation/skeleton"
                     ]
                 },
                 {

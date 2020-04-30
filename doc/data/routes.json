@@ -177,6 +177,18 @@
             "documentation/tooltip"
         ]
     },
+    "documentation/skeleton": {
+        "title": "skeleton 骨架",
+        "subtitle": "数据载入前的骨架效果",
+        "path": "/documentation/skeleton",
+        "githubPath": "pages/components/skeleton/Skeleton.vue",
+        "menu": "documentation",
+        "breadcrumb": [
+            "/",
+            "documentation",
+            "documentation/skeleton"
+        ]
+    },
     "documentation/modal": {
         "title": "Modal",
         "subtitle": "Classic modal overlay to include any content you may need",
