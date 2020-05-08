@@ -4,6 +4,7 @@
       <s-button type="is-primary">
         Primary
       </s-button>
+
       <s-button type="is-default">
         Default
       </s-button>

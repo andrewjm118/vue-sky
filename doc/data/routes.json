@@ -529,8 +529,8 @@
         "isUpdated": "true"
     },
     "documentation/menu": {
-        "title": "Menu",
-        "subtitle": "A simple vertical menu",
+        "title": "Menu 菜单",
+        "subtitle": "扩展的菜单",
         "path": "/documentation/menu",
         "githubPath": "pages/components/menu/Menu.vue",
         "menu": "documentation",
@@ -538,6 +538,19 @@
             "/",
             "documentation",
             "documentation/menu"
+        ],
+        "isUpdated": "true"
+    },
+    "documentation/tree": {
+        "title": "tree 树型",
+        "subtitle": "扩展的菜单",
+        "path": "/documentation/tree",
+        "githubPath": "pages/components/tree/Tree.vue",
+        "menu": "documentation",
+        "breadcrumb": [
+            "/",
+            "documentation",
+            "documentation/tree"
         ],
         "isUpdated": "true"
     },

@@ -52,7 +52,9 @@ const router = new Router({
         route('documentation/alert', 'components/alert/Alert'),
         route('documentation/affix', 'components/affix/Affix'),
         route('documentation/datepicker', 'components/datepicker/Datepicker'),
-        route('documentation/datetimepicker', 'components/datetimepicker/Datetimepicker')
+        route('documentation/datetimepicker', 'components/datetimepicker/Datetimepicker'),
+        route('documentation/menu', 'components/menu/Menu'),
+        route('documentation/tree', 'components/tree/Tree')
 
       ]
     },

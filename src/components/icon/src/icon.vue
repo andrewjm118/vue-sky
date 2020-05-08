@@ -2,6 +2,7 @@
   <span
     class="icon"
     :class="[newType, size]"
+    @click="$emit('click', $event)"
   >
     <i
       v-if="!useIconComponent"

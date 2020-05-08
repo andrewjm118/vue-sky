@@ -30,6 +30,7 @@ import DatepickerMonth from './components/datepicker-month'
 import DatepickerTableRow from './components/datepicker-table-row'
 import Datetimepicker from './components/datetimepicker'
 import Skeleton from './components/skeleton'
+import Tree from './components/tree'
 import { Notification, NotificationProgrammatic } from './components/notification'
 import { Loading, LoadingProgrammatic } from './components/loading'
 
@@ -67,7 +68,8 @@ const components = {
   Notification,
   Form,
   FormItem,
-  Skeleton
+  Skeleton,
+  Tree
 }
 
 function install (Vue) {

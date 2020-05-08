@@ -61,31 +61,12 @@
                     ] 
                 },
                 {
-                    "category" : "其他",
+                    "category" : "扩展",
                     "pages": [
-                        
+                        "documentation/menu",
+                        "documentation/tree"
                     ] 
                 }
-            ]
-        }
-    ],
-    "extensions": [
-        {
-            "category": "Input format",
-            "pages": [
-                "extensions/cleavejs"
-            ]
-        },
-        {
-            "category": "Validation",
-            "pages": [
-                "extensions/veevalidate"
-            ]
-        },
-        {
-            "category": "Drag & drop",
-            "pages": [
-                "extensions/sortablejs"
             ]
         }
     ]

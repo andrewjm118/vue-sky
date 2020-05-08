@@ -1,10 +1,17 @@
 <template>
   <section>
     <div class="buttons">
-      <s-button type="is-primary">
+      <s-button
+        type="is-primary"
+        @click="hehe"
+      >
         Primary
       </s-button>
-
+      <s-icon
+        icon="account"
+        size="is-small"
+        @click="hehe"
+      />
       <s-button type="is-success">
         Success
       </s-button>
@@ -97,3 +104,17 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  data () {
+    return {
+
+    }
+  },
+  methods: {
+    hehe () {
+      console.log(11222)
+    }
+  }
+}
+</script>
