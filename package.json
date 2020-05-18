@@ -22,12 +22,30 @@
     "vue-sky",
     "components"
   ],
+  "jest": {
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest",
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    }
+  },
   "scripts": {
     "dev": "webpack-dev-server --inline  --config build/webpack.config.dev.js",
     "prod": "webpack --config build/webpack.config.prod.js",
     "lint": "eslint --ext .js,.vue src",
     "lint:fix": "eslint --ext .js,.vue src --fix",
     "new": "plop",
+    "test": "jest",
     "build:js": "rollup -c && rollup -c --environment MINIFY",
     "build:scss": "node-sass --output-style expanded src/scss/vue-sky-build.scss | node ./build/banner.js > dist/vue-sky.css && cleancss -o dist/vue-sky.min.css dist/vue-sky.css",
     "build:lib": "npm run build:js && npm run build:scss",
@@ -39,6 +57,7 @@
     "async-validator": "1.8.1",
     "bulma": "^0.7.5",
     "gemini-scrollbar": "^1.5.3",
+    "jump.js": "^1.0.2",
     "liquor-tree": "^0.2.70",
     "vee-validate": "^3.2.1",
     "vue": "^2.6.10",
@@ -55,6 +74,7 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
     "clean-css-cli": "^4.3.0",
     "clipboard": "^2.0.4",
     "copy-webpack-plugin": "^5.0.4",

@@ -51,7 +51,6 @@ export default {
   },
   methods: {
     setMeta (meta) {
-      console.log(99, meta)
       this.meta = meta
       this.menu = menuData[this.meta.menu]
     },

@@ -31,6 +31,9 @@ import DatepickerTableRow from './components/datepicker-table-row'
 import Datetimepicker from './components/datetimepicker'
 import Skeleton from './components/skeleton'
 import Tree from './components/tree'
+import Sidebar from './components/sidebar'
+import Modal from './components/modal'
+import Progress from './components/progress'
 import { Notification, NotificationProgrammatic } from './components/notification'
 import { Loading, LoadingProgrammatic } from './components/loading'
 
@@ -69,7 +72,10 @@ const components = {
   Form,
   FormItem,
   Skeleton,
-  Tree
+  Tree,
+  Sidebar,
+  Modal,
+  Progress
 }
 
 function install (Vue) {

@@ -189,16 +189,16 @@
             "documentation/skeleton"
         ]
     },
-    "documentation/modal": {
-        "title": "Modal",
-        "subtitle": "Classic modal overlay to include any content you may need",
-        "path": "/documentation/modal",
-        "githubPath": "pages/components/modal/Modal.vue",
+    "documentation/progress": {
+        "title": "progress 进度条",
+        "subtitle": "进度条效果",
+        "path": "/documentation/progress",
+        "githubPath": "pages/components/progress/Progress.vue",
         "menu": "documentation",
         "breadcrumb": [
             "/",
             "documentation",
-            "documentation/modal"
+            "documentation/progress"
         ]
     },
     "documentation/navbar": {
@@ -295,6 +295,30 @@
             "/",
             "documentation",
             "documentation/loading"
+        ]
+    },
+    "documentation/sidebar": {
+        "title": "Sidebar 侧边模态框",
+        "subtitle": "侧边栏弹出框",
+        "path": "/documentation/sidebar",
+        "githubPath": "views/components/sidebar/Sidebar.vue",
+        "menu": "documentation",
+        "breadcrumb": [
+            "/",
+            "documentation",
+            "documentation/sidebar"
+        ]
+    },
+    "documentation/modal": {
+        "title": "modal 模式化窗口",
+        "subtitle": "弹出框",
+        "path": "/documentation/modal",
+        "githubPath": "views/components/modal/Modal.vue",
+        "menu": "documentation",
+        "breadcrumb": [
+            "/",
+            "documentation",
+            "documentation/modal"
         ]
     },
     "documentation/field": {
@@ -566,18 +590,6 @@
             "documentation/slider"
         ],
         "isUpdated": true
-    },
-    "documentation/progress": {
-        "title": "Progress",
-        "subtitle": "Wrapper around Bulma / Native HTML progress bars",
-        "path": "/documentation/progress",
-        "githubPath": "pages/components/progress/Progress.vue",
-        "menu": "documentation",
-        "breadcrumb": [
-            "/",
-            "documentation",
-            "documentation/progress"
-        ]
     },
     "extensions": {
         "title": "Extensions",

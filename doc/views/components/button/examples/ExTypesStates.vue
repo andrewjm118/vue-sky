@@ -7,11 +7,6 @@
       >
         Primary
       </s-button>
-      <s-icon
-        icon="account"
-        size="is-small"
-        @click="hehe"
-      />
       <s-button type="is-success">
         Success
       </s-button>

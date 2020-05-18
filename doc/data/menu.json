@@ -41,7 +41,8 @@
                         "documentation/tabs",
                         "documentation/tag",
                         "documentation/tooltip",
-                        "documentation/skeleton"
+                        "documentation/skeleton",
+                        "documentation/progress"
                     ]
                 },
                 {
@@ -49,7 +50,9 @@
                     "pages": [
                         "documentation/alert", 
                         "documentation/notification",
-                        "documentation/loading"
+                        "documentation/loading",
+                        "documentation/sidebar",
+                        "documentation/modal"
                     ] 
                 },
                 {

@@ -1,5 +1,10 @@
 <template>
   <div>
+    <!-- <Example
+      :component="ExSimple"
+      :code="ExSimpleCode"
+      vertical
+    /> -->
     <Example
       :component="ExTypesStates"
       :code="ExTypesStatesCode"
@@ -39,14 +44,6 @@
       desc="添加 loading 属性即可让按钮处于加载状态，最后两个按钮演示点击后进入加载状态。"
     />
 
-    <Example
-      :component="ExTags"
-      :code="ExTagsCode"
-      title="按钮类型"
-      desc="类型可以是a标签、button按钮、submit 表单提交、router 路由链接"
-      vertical
-    />
-
     <ApiView :data="api" />
   </div>
 </template>
@@ -70,11 +67,6 @@ import ExDisabledCode from '!!raw-loader!./examples/ExDisabled'
 import ExLoad from './examples/ExLoad'
 import ExLoadCode from '!!raw-loader!./examples/ExLoad'
 
-import ExTags from './examples/ExTags'
-import ExTagsCode from '!!raw-loader!./examples/ExTags'
-
-import ExRouter from './examples/ExRouter'
-import ExRouterCode from '!!raw-loader!./examples/ExRouter'
 export default {
   data () {
     return {
@@ -84,15 +76,11 @@ export default {
       ExIcons,
       ExSizes,
       ExDisabled,
-      ExTags,
       ExLoad,
-      ExRouter,
       ExSimpleCode,
       ExTypesStatesCode,
       ExIconsCode,
       ExSizesCode,
-      ExTagsCode,
-      ExRouterCode,
       ExDisabledCode,
       ExLoadCode
     }

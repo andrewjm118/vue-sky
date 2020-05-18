@@ -46,6 +46,7 @@ const router = new Router({
         route('documentation/skeleton', 'components/skeleton/Skeleton'),
         route('documentation/notification', 'components/notification/Notification'),
         route('documentation/loading', 'components/loading/Loading'),
+        route('documentation/sidebar', 'components/sidebar/Sidebar'),
         route('documentation/dropdown', 'components/dropdown/Dropdown'),
         route('documentation/icon', 'installation/Icon'),
         route('documentation/custom', 'installation/Custom'),
@@ -54,7 +55,9 @@ const router = new Router({
         route('documentation/datepicker', 'components/datepicker/Datepicker'),
         route('documentation/datetimepicker', 'components/datetimepicker/Datetimepicker'),
         route('documentation/menu', 'components/menu/Menu'),
-        route('documentation/tree', 'components/tree/Tree')
+        route('documentation/tree', 'components/tree/Tree'),
+        route('documentation/modal', 'components/modal/Modal'),
+        route('documentation/progress', 'components/progress/Progress')
 
       ]
     },

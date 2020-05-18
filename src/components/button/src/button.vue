@@ -1,9 +1,16 @@
+<!--
+ * @Description: 按钮组件
+ * @Author: andrewjm
+ * @Date: 2020-04-21 16:26:13
+ * @LastEditTime: 2020-05-11 15:52:20
+ * @LastEditors: andrewjm
+v-bind="$attrs" 主要作用是识别html的原生元素,不需要用props来获取了 (class 和 style 除外) 不包括props中设定的，另外$attrs 可以继承祖父的元素
+inheritAttrs: false, true 区别，生成的html 是否在标签上显示$attrs 元素
+ -->
 <template>
-  <component
-    :is="tag"
+  <button
     class="button"
     v-bind="$attrs"
-    :type="nativeType"
     :class="[size, type, {
       'is-rounded' : rounded,
       'is-btn-loading' : loading,
@@ -32,12 +39,11 @@
       :icon="iconRight"
       :size="iconSize"
     />
-  </component>
+  </button>
 </template>
 
 <script>
 import Icon from '../../icon'
-
 export default {
   name: 'SButton',
   components: {
@@ -58,31 +64,7 @@ export default {
     focused: Boolean,
     active: Boolean,
     hovered: Boolean,
-    selected: Boolean,
-    tag: {
-      type: String,
-      default: 'button',
-      validator: (value) => {
-        return [
-          'button',
-          'a',
-          'input',
-          'router-link',
-          'nuxt-link'
-        ].indexOf(value) >= 0
-      }
-    },
-    nativeType: {
-      type: String,
-      default: 'button',
-      validator: (value) => {
-        return [
-          'button',
-          'submit',
-          'reset'
-        ].indexOf(value) >= 0
-      }
-    }
+    selected: Boolean
   },
   computed: {
     iconSize () {
@@ -96,6 +78,7 @@ export default {
   },
   methods: {}
 }
+
 </script>
 <style lang="scss">
  .is-btn-loading {
