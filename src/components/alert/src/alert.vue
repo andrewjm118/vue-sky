@@ -20,7 +20,6 @@
             :icon="icon"
             :pack="iconPack"
             both
-
             aria-hidden
           />
         </div>
