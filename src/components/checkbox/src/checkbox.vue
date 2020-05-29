@@ -37,8 +37,10 @@
 </template>
 
 <script>
+import emitter from '../../../mixins/emitter'
 export default {
   name: 'SCheckbox',
+  mixins: [emitter],
   model: {
     prop: 'value',
     event: 'change'
@@ -60,6 +62,7 @@ export default {
         return this.group.value
       },
       set (value) {
+        this.dispatch('SFormItem', 'form.change', [value])
         // this.group.$emit.apply(this.group, ['change', value])
         this.group.$emit('change', value)
       }

@@ -197,6 +197,7 @@
 
 <script>
 import FormElementMixin from '../../../utils/FormElementMixin'
+import emitter from '../../../mixins/emitter'
 import { isMobile } from '../../../utils/helpers'
 import config from '../../../utils/config'
 
@@ -247,7 +248,7 @@ export default {
     [Dropdown.name]: Dropdown,
     [DropdownItem.name]: DropdownItem
   },
-  mixins: [FormElementMixin],
+  mixins: [FormElementMixin, emitter],
   inheritAttrs: false,
   props: {
     value: {
@@ -489,6 +490,7 @@ export default {
     value (value) {
       this.updateInternalState(value)
       this.togglePicker(false)
+      this.dispatch('SFormItem', 'form.change', [value])
       !this.isValid && this.$refs.input.checkHtml5Validity()
     },
 

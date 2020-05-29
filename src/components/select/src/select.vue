@@ -42,12 +42,13 @@
 <script>
 import Icon from '../../icon'
 import FormElementMixin from '../../../utils/FormElementMixin'
+import emitter from '../../../mixins/emitter'
 export default {
   name: 'SSelect',
   components: {
     [Icon.name]: Icon
   },
-  mixins: [FormElementMixin],
+  mixins: [FormElementMixin, emitter],
   inheritAttrs: false,
   props: {
     value: {
@@ -88,6 +89,7 @@ export default {
   watch: {
     value (value) {
       this.selected = value
+      this.dispatch('SFormItem', 'form.change', [value])
       !this.isValid && this.checkHtml5Validity()
     }
   }
