@@ -14,5 +14,12 @@
     <p>
       本框架借鉴了优秀的基于bulma的vue.js框架,结合了一些自己的想法和工作中的总结。
     </p>
+    <p>
+      本框架是在buefy的基础上修改而来，在此感谢
+      <a
+        href="https://buefy.org/"
+        target="_blank"
+      >buefy</a>框架
+    </p>
   </article>
 </template>

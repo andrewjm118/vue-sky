@@ -22,9 +22,8 @@
                 {
                     "category": "表单",
                     "pages": [
-                        "documentation/checkbox",
                         "documentation/form",
-                        "documentation/field",
+                        "documentation/checkbox",
                         "documentation/input",        
                         "documentation/radio",
                         "documentation/select",

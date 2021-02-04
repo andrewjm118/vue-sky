@@ -5,6 +5,7 @@ import router from './router'
 
 import hljs from 'highlight.js'
 
+import '@/assets/scss/main.scss'
 import CodeView from './components/CodeView'
 import Example from './components/Example'
 import ApiView from './components/ApiView'

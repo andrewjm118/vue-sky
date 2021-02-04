@@ -14,7 +14,6 @@
 
 <script>
 import GeminiScrollbar from 'gemini-scrollbar'
-import 'gemini-scrollbar/gemini-scrollbar.css'
 let geminiScrollbar
 
 export default {

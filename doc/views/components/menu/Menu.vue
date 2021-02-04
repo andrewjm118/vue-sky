@@ -16,7 +16,6 @@
 </template>
 
 <script>
-import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
 import ExSimple from './examples/ExSimple'
 import ExSimpleCode from '!!raw-loader!./examples/ExSimple'
 import ExTheme from './examples/ExTheme'

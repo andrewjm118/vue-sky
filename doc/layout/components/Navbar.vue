@@ -40,13 +40,13 @@
         :class="{ 'is-active': isMenuActive }"
       >
         <div class="navbar-end">
-          <router-link
+          <!-- <router-link
             to="/"
             exact
             class="navbar-item"
           >
             blog
-          </router-link>
+          </router-link> -->
 
           <div class="navbar-item has-dropdown is-hoverable">
             <div class="navbar-link">
@@ -54,10 +54,10 @@
             </div>
 
             <div class="navbar-dropdown is-boxed">
-              <strong class="navbar-item is-version">
+              <!-- <strong class="navbar-item is-version">
                 <span class="has-text-primary">Buefy version</span>
                 <span class="has-text-grey">{{ version }}</span>
-              </strong>
+              </strong> -->
               <strong class="navbar-item is-version">
                 <span class="has-text-bulma">Bulma version</span>
                 <span class="has-text-grey">{{ bulmaVersion }}</span>
@@ -66,7 +66,7 @@
               <hr class="navbar-divider">
               <a
                 class="navbar-item"
-                href="https://github.com/buefy/buefy/releases"
+                href="https://github.com/jgthms/bulma"
                 target="_blank"
               >
                 Changelogs
@@ -75,10 +75,15 @@
           </div>
 
           <div class="navbar-item">
-            <a
+            <!-- <a
               class="button is-outlined"
               :class="light ? 'is-light' : 'is-twitter'"
               @click="tweet"
+            > -->
+            <a
+              class="button is-outlined"
+              href="https://github.com/andrewjm118/vue-sky"
+              target="_blank"
             >
               <s-icon icon="github-circle" />
               <span>github</span>

@@ -1,8 +1,8 @@
 <!--
  * @Author: andrewjm
  * @Date: 2020-04-26 15:06:14
- * @LastEditTime: 2020-04-27 16:39:46
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-05-29 17:24:31
+ * @LastEditors: andrewjm
  * @Description: In User Settings Edit
  * @FilePath: \vue-sky\src\components\form\src\form-item.vue
  -->
@@ -88,8 +88,6 @@ export default {
         if (path.indexOf(':') !== -1) {
           path = path.replace(/:/, '.')
         }
-        console.log(111, path)
-        console.log(222, model)
         return getPropByPath(model, path).v
       }
     }

@@ -58,7 +58,7 @@ export default {
   },
   methods: {
     mainScrollbarResize () {
-      console.log('mainScrollbarResize')
+      // console.log('mainScrollbarResize')
     },
     normalizedData (items) {
       return items.map((item) => {
@@ -77,8 +77,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  .main-scrollbar {
-    height: 800px;
-    overflow: auto;
-  }
+
 </style>

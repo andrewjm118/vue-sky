@@ -1,6 +1,11 @@
 <template>
   <div>
-    保留首页
+    <router-link
+      class="button is-medium home-hero"
+      to="/documentation/"
+    >
+      Get started
+    </router-link>
   </div>
 </template>
 
